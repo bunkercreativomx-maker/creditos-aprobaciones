@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#060d1c">
+<title>Créditos a tu medida — Revisión de campaña sep-oct 2026</title>
+<link rel="icon" href="posts/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#060d1c;--navy2:#0a1628;--navy3:#0f2038;--gold:#c9a227;--gold2:#e3cd7f;--cream:#faf7f0;--cream2:#f3ecdc;--ink:#171c26;--muted:#8e97a8;--line:#1e3054;--ok:#4ade80;--warn:#fbbf24;--bad:#f87171;--green:#25d366}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(1200px 600px at 15% -10%,#12233f 0%,var(--navy) 55%) fixed;color:var(--cream);font-family:Manrope,system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;margin:0}
+.loader{position:fixed;inset:0;z-index:99;display:grid;place-items:center;background:var(--navy);color:var(--gold);font:600 20px Fraunces,serif;letter-spacing:.22em;transition:.4s}.loader.hide{opacity:0;visibility:hidden}
+.top{position:sticky;top:0;z-index:30;background:rgba(6,13,28,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.top-inner{max-width:1500px;margin:auto;padding:14px 22px;display:flex;gap:18px;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px;font:600 19px Fraunces,serif;letter-spacing:.02em}
+.brand img{width:38px;height:38px;border-radius:9px}
+.brand small{display:block;font:700 9.5px Manrope;letter-spacing:.28em;color:var(--gold)}
+.campaign{text-align:right;font-size:11.5px;color:var(--muted);line-height:1.5}.campaign strong{color:var(--gold2);display:block;letter-spacing:.1em;font-size:10.5px}
+main{max-width:1500px;margin:auto;padding:26px 22px 80px}
+.hero{background:linear-gradient(125deg,var(--navy3),#0b1a30);border:1px solid var(--line);border-radius:22px;padding:clamp(22px,4vw,44px);display:grid;grid-template-columns:1.5fr 1fr;gap:26px;align-items:end;box-shadow:0 26px 70px rgba(0,0,0,.4)}
+.eyebrow{color:var(--gold);font:800 10.5px Manrope;letter-spacing:.24em}
+.hero h1{font-size:clamp(30px,5.4vw,60px);line-height:1.03;margin:12px 0 8px}
+.hero h1 em{display:block;font-style:normal;color:var(--gold2);font-weight:400}
+.hero p{color:#c3c9d6;line-height:1.7;font-size:13.5px;max-width:760px;margin:10px 0 0}
+.metrics{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.metric{background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:14px;padding:14px}
+.metric b{display:block;font:700 26px Fraunces,serif;color:var(--gold2)}
+.metric span{font-size:10.5px;color:var(--muted);letter-spacing:.04em}
+.progress-wrap{margin:22px 0 16px}
+.status{display:flex;gap:16px;flex-wrap:wrap;font-size:12px;color:var(--muted);margin-bottom:9px}
+.status b{color:var(--cream)}
+.progress{height:9px;background:#12233f;border-radius:20px;overflow:hidden;border:1px solid var(--line)}
+.progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--green),#12b76a);transition:.35s}
+.rules{background:rgba(201,162,39,.07);border:1px solid rgba(201,162,39,.3);border-radius:16px;padding:18px 20px;margin:20px 0;font-size:12.5px;line-height:1.75;color:#cfd5e2}
+.rules h3{font-size:16px;color:var(--gold2);margin-bottom:6px}
+.rules ul{margin:8px 0 0;padding-left:20px}.rules b{color:var(--cream)}
+details.rules summary{cursor:pointer;font:600 15px Fraunces,serif;color:var(--gold2)}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:20px 0 8px}
+button,.chipf{font:700 12px Manrope;border:1px solid var(--line);background:#0d1c33;color:#c3c9d6;border-radius:99px;padding:9px 15px;cursor:pointer;transition:.18s}
+button:hover{border-color:var(--gold);color:var(--cream)}
+button.active{background:var(--gold);border-color:var(--gold);color:var(--navy)}
+button.primary{background:var(--green);border-color:var(--green);color:#04250f}
+button.gold{background:var(--gold);border-color:var(--gold);color:var(--navy)}
+input[type=search],select{font:600 12px Manrope;background:#0d1c33;border:1px solid var(--line);color:var(--cream);border-radius:99px;padding:9px 15px;outline:none}
+input[type=search]{min-width:210px}
+.spacer{flex:1}
+.section-head{margin:34px 0 14px;display:flex;gap:14px;align-items:flex-end;justify-content:space-between}
+.section-head h2{font-size:26px}.section-head p{margin:5px 0 0;color:var(--muted);font-size:12.5px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(400px,1fr));gap:18px}
+.card{background:linear-gradient(180deg,#0c1a2e,#0a1526);border:1px solid var(--line);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 16px 44px rgba(0,0,0,.35)}
+.card.approved{border-color:rgba(74,222,128,.55)}
+.card.changes{border-color:rgba(251,191,36,.55)}
+.card-head{display:flex;gap:10px;align-items:center;padding:13px 15px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.02)}
+.daynum{font:700 19px Fraunces,serif;color:var(--navy);background:var(--gold);border-radius:9px;min-width:40px;height:36px;display:grid;place-items:center}
+.card-head .meta{flex:1;min-width:0}
+.card-head .meta b{display:block;font:700 13px Manrope;color:var(--cream)}
+.card-head .meta span{font-size:11px;color:var(--muted)}
+.pill{font:800 9.5px Manrope;letter-spacing:.1em;text-transform:uppercase;border-radius:99px;padding:5px 9px;white-space:nowrap}
+.pill.fmt{background:rgba(201,162,39,.16);color:var(--gold2);border:1px solid rgba(201,162,39,.35)}
+.pill.pil{background:rgba(255,255,255,.06);color:#b9c1d1;border:1px solid var(--line)}
+.state{font:800 10px Manrope;letter-spacing:.08em;padding:4px 8px;border-radius:99px;border:1px solid var(--line);color:var(--muted)}
+.state.approved{color:var(--ok);border-color:rgba(74,222,128,.5);background:rgba(74,222,128,.1)}
+.state.changes{color:var(--warn);border-color:rgba(251,191,36,.5);background:rgba(251,191,36,.1)}
+.shots{display:flex;gap:8px;overflow-x:auto;padding:14px 15px 4px;scroll-snap-type:x mandatory}
+.shots img{width:222px;height:222px;object-fit:contain;background:#071122;border:1px solid var(--line);border-radius:13px;flex:0 0 auto;cursor:zoom-in;scroll-snap-align:start}
+.shots.vert img{width:150px;height:267px}
+.note-visual{font-size:10.5px;color:var(--muted);padding:8px 15px 0}
+.body{padding:6px 15px 15px;display:flex;flex-direction:column;gap:11px;flex:1}
+.lbl{font:800 9.5px Manrope;letter-spacing:.16em;color:var(--gold);text-transform:uppercase}
+textarea{width:100%;background:#081426;border:1px solid var(--line);border-radius:12px;color:#dfe4ee;font:500 12.5px Manrope;line-height:1.6;padding:12px;resize:vertical;min-height:118px;outline:none}
+textarea:focus{border-color:var(--gold)}
+.prod{font-size:11.5px;line-height:1.6;color:#aab3c4;background:rgba(255,255,255,.04);border-left:2px solid var(--gold);border-radius:0 8px 8px 0;padding:9px 12px}
+.prod b{color:var(--gold2)}
+.actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center;border-top:1px solid var(--line);padding-top:12px}
+.actions button{font-size:11.5px;padding:9px 13px}
+.actions .ok{border-color:rgba(74,222,128,.5);color:var(--ok)}
+.actions .ch{border-color:rgba(251,191,36,.5);color:var(--warn)}
+.actions .rs{border-color:var(--line);color:var(--muted)}
+.ads-section{margin-top:56px;border-top:1px solid var(--line);padding-top:30px}
+.strategy{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin:18px 0 26px}
+.scard{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:16px;padding:16px}
+.scard h3{font-size:15.5px;color:var(--gold2);margin-bottom:8px}
+.scard p,.scard li{font-size:12px;line-height:1.65;color:#b9c1d1;margin:0}
+.scard ul{padding-left:16px;margin:6px 0 0}
+.adgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(400px,1fr));gap:18px}
+.adcard{background:linear-gradient(180deg,#0c1a2e,#0a1526);border:1px solid var(--line);border-radius:20px;padding:17px;display:flex;flex-direction:column;gap:11px}
+.adcard.approved{border-color:rgba(74,222,128,.55)}.adcard.changes{border-color:rgba(251,191,36,.55)}
+.adcard h3{font-size:19px}.adid{font:800 9.5px Manrope;letter-spacing:.18em;color:var(--gold)}
+.variant{background:#081426;border:1px solid var(--line);border-radius:12px;padding:11px}
+.variant b{display:block;font:800 9.5px Manrope;letter-spacing:.14em;color:var(--gold2);margin-bottom:5px}
+.variant p{font-size:12px;line-height:1.6;margin:0;color:#dfe4ee}
+.modal{position:fixed;inset:0;background:rgba(3,7,15,.94);display:none;place-items:center;z-index:60;padding:20px}
+.modal.on{display:grid}.modal img{max-width:94vw;max-height:92vh;border-radius:12px}
+.modal button{position:absolute;top:16px;right:18px;font-size:22px;padding:6px 14px}
+footer{margin-top:60px;border-top:1px solid var(--line);padding-top:18px;color:var(--muted);font-size:11.5px;display:flex;gap:14px;flex-wrap:wrap;justify-content:space-between}
+@media(max-width:860px){.hero{grid-template-columns:1fr}.campaign{display:none}.grid,.adgrid{grid-template-columns:1fr}main{padding:16px 13px 60px}.toolbar input[type=search]{min-width:0;width:100%}}
+</style>
+</head>
+<body>
+<div class="loader" id="loader">CRÉDITOS A TU MEDIDA</div>
+
+<header class="top"><div class="top-inner">
+  <div class="brand"><img src="posts/logo.png" alt="Créditos a tu medida"><div>Créditos a tu medida<small>PORTAL DE APROBACIÓN</small></div></div>
+  <div class="campaign"><strong>CAMPAÑA FACEBOOK · 30 DÍAS</strong>14 de septiembre – 13 de octubre de 2026<br>Financiera Fortaleza, S.A. de C.V., SOFOM, E.N.R.</div>
+</div></header>
+
+<main>
+  <section class="hero">
+    <div>
+      <div class="eyebrow">REVISIÓN PARA EL CLIENTE · v1</div>
+      <h1>Calendario de contenido<em>Crédito vía nómina, 30 días</em></h1>
+      <p>Aquí está todo lo que se publicaría en Facebook del 14 de septiembre al 13 de octubre: la pieza visual y el texto de cada día, más el plan de anuncios. Puedes <b>aprobar</b> o <b>pedir cambios</b> en cada publicación; los comentarios se guardan solos y nosotros los vemos al instante.</p>
+    </div>
+    <div class="metrics">
+      <div class="metric"><b>30</b><span>publicaciones orgánicas</span></div>
+      <div class="metric"><b id="mApproved">0</b><span>aprobadas por ti</span></div>
+      <div class="metric"><b>5</b><span>conceptos de anuncio</span></div>
+      <div class="metric"><b>1</b><span>campaña de WhatsApp</span></div>
+    </div>
+  </section>
+
+  <div class="progress-wrap">
+    <div class="status" id="stats"></div>
+    <div class="progress"><i id="bar"></i></div>
+  </div>
+
+  <details class="rules" open>
+    <summary>Cómo está construido este calendario (algoritmo de Meta 2026)</summary>
+    <ul>
+      <li><b>Cada publicación pide comentario, no “like”.</b> Meta publica que comentarios, compartidos y tiempo de lectura pesan más que las reacciones; el “dale like si te gustó” rinde cada vez menos.</li>
+      <li><b>Se aprovecha la ventana del mismo día.</b> Facebook muestra más de un 25% más de Reels del mismo día, y su sistema de 2026 entrega el contenido nuevo más rápido: por eso los Reels se graban y se publican el mismo día.</li>
+      <li><b>Todo el contenido es original.</b> La política vigente de Meta castiga el material reposteado: aquí todo se graba en la oficina, con asesor a cuadro y clientes que autorizan por escrito.</li>
+      <li><b>Se empuja el compartido en privado</b> (WhatsApp/Messenger), que es la señal que más ayuda a que un video se distribuya más allá de los seguidores.</li>
+      <li><b>Ningún texto habla de la situación personal del lector</b> ("¿estás endeudado?", "tu mal historial"): eso viola políticas de Meta además de dañar la confianza. Se habla del producto y del proceso.</li>
+      <li><b>No hay tasas, montos ni plazos inventados.</b> Todo dato proviene de la información oficial del negocio (3 requisitos, depósito el mismo día solicitando antes de las 3:00 pm, 20+ años, oficina en Zona Pronaf, WhatsApp 656 374 8899).</li>
+      <li><b>Los anuncios usan 5 conceptos distintos</b> (no 5 versiones del mismo arte), con público amplio y Advantage+ activo, porque en 2026 la creatividad es lo que manda, no el ajuste fino de intereses.</li>
+    </ul>
+  </details>
+
+  <div class="toolbar">
+    <button class="active" data-filter="all">Todas</button>
+    <button data-filter="pending">Pendientes</button>
+    <button data-filter="approved">Aprobadas</button>
+    <button data-filter="changes">Con cambios</button>
+    <select id="typeFilter"><option value="all">Todos los formatos</option></select>
+    <input id="search" type="search" placeholder="Buscar en temas y textos…">
+    <div class="spacer"></div>
+    <button id="approveAll">Aprobar las visibles</button>
+    <button class="gold" id="sendBunker">Enviar al equipo ✓</button>
+    <button id="export">Descargar revisión</button>
+    <button id="whatsapp">Resumen WhatsApp</button>
+    <button id="reset">Reiniciar</button>
+  </div>
+
+  <div class="section-head"><div><h2>Calendario de contenido</h2><p>Toca una imagen para verla en grande. El texto de cada día es editable: si quieres cambiar una palabra, escríbela directamente y pide el cambio.</p></div></div>
+  <section class="grid" id="grid"></section>
+
+  <section class="ads-section" id="ads">
+    <div class="section-head"><div><h2>Anuncios de Facebook e Instagram</h2><p>Plan de medios, públicos y textos listos para revisar.</p></div></div>
+    <div class="strategy" id="strategy"></div>
+    <div class="adgrid" id="adgrid"></div>
+  </section>
+
+  <footer>
+    <div>Créditos a tu medida · Benjamín Franklin 3220, Int 22-D, Zona Pronaf, Ciudad Juárez, Chih.<br>Lun-Vie 9:00-18:00 · Sáb 9:00-14:00 · WhatsApp 656 374 8899</div>
+    <div>Portal de revisión v1 · el arte final de cada día se produce al aprobar el sistema visual.</div>
+  </footer>
+</main>
+
+<div class="modal" id="modal"><button aria-label="Cerrar">×</button><img alt="Pieza completa"></div>
+
+<script>
+const PB_URL='https://aprovaciones.bunkeragent.cloud';
+const BUNKER_CLIENT='creditos';
+const BUNKER_CAMPAIGN='septiembre-octubre-2026';
+const REVIEWER='Cliente Créditos a tu medida';
+const KEY='creditos_review_v1';
+let clientRowId=null, posts=[], adsData=null, filter='all', state={approved:{},skipped:{},notes:{},edits:{},adApproved:{},adSkipped:{}};
+const $=s=>document.querySelector(s);
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const statusOf=id=>state.approved[id]?'approved':(state.skipped[id]?'changes':'pending');
+
+function loadLocal(){try{state=Object.assign(state,JSON.parse(localStorage.getItem(KEY)||'{}'))}catch(e){}}
+function save(){localStorage.setItem(KEY,JSON.stringify(state));updateStats();schedulePersist();}
+let _t=null;function schedulePersist(){clearTimeout(_t);_t=setTimeout(()=>persist(true),1200);}
+function buildReview(){
+  return {posts:posts.map(p=>({id:p.id,type:'post',status:statusOf(p.id),note:state.notes[p.id]||'',editedCopy:state.edits[p.id]||''})).filter(p=>p.status!=='pending'||p.note),
+          adStatus:Object.assign({},...Object.keys(state.adApproved).map(k=>({[k]:'approved'})),...Object.keys(state.adSkipped).map(k=>({[k]:'changes'})))};
+}
+function persist(silent){
+  const body={review:buildReview()}, headers={'Content-Type':'application/json'};
+  if(clientRowId){
+    return fetch(`${PB_URL}/api/collections/approvals/records/${clientRowId}`,{method:'PATCH',headers,body:JSON.stringify(body)})
+      .then(r=>{if(!r.ok&&!silent)alert('No se pudo guardar. Revisa tu conexión.');return r.ok}).catch(()=>{if(!silent)alert('No se pudo guardar.');return false});
+  }
+  return fetch(`${PB_URL}/api/collections/approvals/records`,{method:'POST',headers,body:JSON.stringify({client:BUNKER_CLIENT,campaign:BUNKER_CAMPAIGN,client_name:REVIEWER,review:body.review})})
+    .then(r=>r.ok?r.json():null).then(rec=>{if(rec&&rec.id)clientRowId=rec.id;return !!rec}).catch(()=>false);
+}
+function mergePocketBase(){
+  const q=encodeURIComponent(`(client='${BUNKER_CLIENT}'&&campaign='${BUNKER_CAMPAIGN}')`);
+  return fetch(`${PB_URL}/api/collections/approvals/records?filter=${q}&perPage=200&sort=-created`)
+    .then(r=>r.ok?r.json():{items:[]}).then(d=>{
+      const row=(d.items&&d.items[0])||null; if(!row) return;
+      clientRowId=row.id;
+      ((row.review&&row.review.posts)||[]).forEach(p=>{
+        const id=+p.id; if(!id) return;
+        if(p.status==='approved'){state.approved[id]=true;delete state.skipped[id];}
+        else if(p.status==='changes'||p.status==='skipped'){state.skipped[id]=true;delete state.approved[id];}
+        if(p.note) state.notes[id]=p.note;
+        if(p.editedCopy) state.edits[id]=p.editedCopy;
+      });
+      const ads=(row.review&&row.review.adStatus)||{};
+      Object.keys(ads).forEach(k=>{ if(ads[k]==='approved'){state.adApproved[k]=true;delete state.adSkipped[k];} else {state.adSkipped[k]=true;delete state.adApproved[k];} });
+    }).catch(()=>{});
+}
+function setStatus(id,st){
+  const nt=document.getElementById('note-'+id); if(nt) state.notes[id]=nt.value.trim();
+  const ed=document.getElementById('copy-'+id); if(ed && ed.value.trim()) state.edits[id]=ed.value.trim();
+  if(st==='approved'){state.approved[id]=true;delete state.skipped[id];}
+  else if(st==='changes'){state.skipped[id]=true;delete state.approved[id];}
+  else {delete state.approved[id];delete state.skipped[id];}
+  save(); render();
+}
+function setAdStatus(id,st){
+  const nt=document.getElementById('adnote-'+id); if(nt) state.notes['ad-'+id]=nt.value.trim();
+  if(st==='approved'){state.adApproved[id]=true;delete state.adSkipped[id];}
+  else if(st==='changes'){state.adSkipped[id]=true;delete state.adApproved[id];}
+  else {delete state.adApproved[id];delete state.adSkipped[id];}
+  save(); renderAds();
+}
+function typeOptions(){
+  const set=[...new Set(posts.map(p=>p.format))].sort();
+  const sel=$('#typeFilter');
+  set.forEach(t=>{const o=document.createElement('option');o.value=t;o.textContent=t;sel.appendChild(o);});
+}
+function render(){
+  const q=($('#search').value||'').toLowerCase().trim();
+  const type=$('#typeFilter').value;
+  const grid=$('#grid'); grid.innerHTML='';
+  posts.filter(p=>{
+    const st=statusOf(p.id);
+    if(filter==='approved'&&st!=='approved')return false;
+    if(filter==='changes'&&st!=='changes')return false;
+    if(filter==='pending'&&st!=='pending')return false;
+    if(type!=='all'&&p.format!==type)return false;
+    if(q&&!((p.copy+' '+p.format+' '+p.pillar+' '+p.production+' '+(p.topic||'')).toLowerCase().includes(q)))return false;
+    return true;
+  }).forEach(p=>{
+    const st=statusOf(p.id);
+    const vertical=p.format.startsWith('Reel')||p.format.startsWith('Story');
+    const card=document.createElement('article');
+    card.className='card'+(st==='approved'?' approved':st==='changes'?' changes':'');
+    card.innerHTML=`
+      <div class="card-head">
+        <div class="daynum">${p.day}</div>
+        <div class="meta"><b>${esc(p.date)}</b><span>${esc(p.pillar)} ${p.topic?'· '+esc(p.topic):''}</span></div>
+        <span class="pill fmt">${esc(p.format)}</span>
+        <span class="state ${st}">${st==='approved'?'✓ Aprobada':st==='changes'?'✎ Con cambios':'Pendiente'}</span>
+      </div>
+      <div class="shots${vertical?' vert':''}">${p.visuals.map(v=>`<img src="${esc(v)}" alt="Pieza del día ${p.day}" loading="lazy" onclick="zoom(this.src)">`).join('')}</div>
+      ${p.visualNote?`<div class="note-visual">${esc(p.visualNote)}</div>`:''}
+      <div class="body">
+        <div><div class="lbl">Texto de la publicación (editable)</div>
+          <textarea id="copy-${p.id}" spellcheck="true">${esc(state.edits[p.id]||p.copy)}</textarea></div>
+        ${p.production?`<div class="prod"><b>Producción:</b> ${esc(p.production)}</div>`:''}
+        <div><div class="lbl">Comentario para el equipo (opcional)</div>
+          <textarea id="note-${p.id}" style="min-height:64px" placeholder="Ejemplo: me gusta, pero cambien el titular del día ${p.day}…">${esc(state.notes[p.id]||'')}</textarea></div>
+        <div class="actions">
+          <button class="ok" onclick="setStatus(${p.id},'approved')">✓ Aprobar</button>
+          <button class="ch" onclick="setStatus(${p.id},'changes')">✎ Pedir cambios</button>
+          <button class="rs" onclick="setStatus(${p.id},'pending')">Reiniciar</button>
+        </div>
+      </div>`;
+    grid.appendChild(card);
+  });
+  updateStats(); renderAds();
+}
+function renderAds(){
+  if(!adsData) return;
+  $('#strategy').innerHTML=`
+    <div class="scard"><h3>Objetivo</h3><p>${esc(adsData.strategy.objective)}</p></div>
+    <div class="scard"><h3>Estructura y públicos</h3><p>${esc(adsData.strategy.structure)}</p><p style="margin-top:7px">${esc(adsData.strategy.audience||'')}</p></div>
+    <div class="scard"><h3>Presupuesto y arranque</h3><p>${esc(adsData.strategy.budget)}</p><p style="margin-top:7px">${esc(adsData.strategy.activation)}</p></div>
+    <div class="scard"><h3>Cuidados obligatorios</h3><ul>${adsData.strategy.guardrails.map(g=>`<li>${esc(g)}</li>`).join('')}</ul></div>
+    <div class="scard"><h3>Cómo se mide</h3><ul>${adsData.strategy.measure.map(g=>`<li>${esc(g)}</li>`).join('')}</ul></div>`;
+  $('#adgrid').innerHTML='';
+  adsData.ads.forEach(a=>{
+    const st=state.adApproved[a.id]?'approved':state.adSkipped[a.id]?'changes':'pending';
+    const el=document.createElement('article');
+    el.className='adcard'+(st==='approved'?' approved':st==='changes'?' changes':'');
+    el.innerHTML=`
+      <div class="adid">${esc(a.id)} · ${esc(a.objective)}</div>
+      <h3>${esc(a.name)}</h3>
+      <div><div class="lbl">Público</div><p style="font-size:12px;color:#b9c1d1;margin:4px 0 0">${esc(a.audience)}</p></div>
+      <div><div class="lbl">Creatividad</div><p style="font-size:12px;color:#b9c1d1;margin:4px 0 0">${esc(a.creative)}</p></div>
+      ${a.primary.map((t,i)=>`<div class="variant"><b>TEXTO PRINCIPAL ${i+1}</b><p>${esc(t)}</p></div>`).join('')}
+      ${a.headline.map((t,i)=>`<div class="variant"><b>TITULAR ${i+1}</b><p>${esc(t)}</p></div>`).join('')}
+      <div><div class="lbl">Botón</div><p style="font-size:12px;color:#b9c1d1;margin:4px 0 0">${esc(a.cta)}</p></div>
+      <div><div class="lbl">Comentario para el equipo</div>
+        <textarea id="adnote-${a.id}" style="min-height:56px" placeholder="Opcional">${esc(state.notes['ad-'+a.id]||'')}</textarea></div>
+      <div class="actions">
+        <button class="ok" onclick="setAdStatus('${a.id}','approved')">✓ Aprobar</button>
+        <button class="ch" onclick="setAdStatus('${a.id}','changes')">✎ Pedir cambios</button>
+        <button class="rs" onclick="setAdStatus('${a.id}','pending')">Reiniciar</button>
+        <span class="state ${st}">${st==='approved'?'✓ Aprobado':st==='changes'?'✎ Con cambios':'Pendiente'}</span>
+      </div>`;
+    $('#adgrid').appendChild(el);
+  });
+}
+function updateStats(){
+  const a=posts.filter(p=>statusOf(p.id)==='approved').length;
+  const c=posts.filter(p=>statusOf(p.id)==='changes').length;
+  const p=posts.length-a-c;
+  $('#stats').innerHTML=`<span><b>${a}</b> aprobadas</span><span><b>${c}</b> con cambios</span><span><b>${p}</b> pendientes</span><span><b>${posts.length}</b> en total</span>`;
+  $('#mApproved').textContent=a;
+  $('#bar').style.width=(posts.length?Math.round(a/posts.length*100):0)+'%';
+}
+function zoom(src){const m=$('#modal');m.querySelector('img').src=src;m.classList.add('on');}
+document.querySelector('#modal button').onclick=()=>$('#modal').classList.remove('on');
+$('#modal').addEventListener('click',e=>{if(e.target.id==='modal')$('#modal').classList.remove('on')});
+document.querySelectorAll('[data-filter]').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('[data-filter]').forEach(x=>x.classList.remove('active'));
+  b.classList.add('active');filter=b.dataset.filter;render();
+});
+$('#typeFilter').onchange=render;
+$('#search').oninput=()=>{clearTimeout(window._s);window._s=setTimeout(render,220)};
+document.addEventListener('change',e=>{
+  if(e.target.matches('textarea[id^="note-"]')){state.notes[e.target.id.slice(5)]=e.target.value.trim();save();}
+  if(e.target.matches('textarea[id^="copy-"]')){state.edits[e.target.id.slice(5)]=e.target.value;save();}
+  if(e.target.matches('textarea[id^="adnote-"]')){state.notes['ad-'+e.target.id.slice(7)]=e.target.value.trim();save();}
+});
+$('#approveAll').onclick=()=>{
+  const vis=[...document.querySelectorAll('#grid .card .daynum')].map(n=>+n.textContent);
+  if(!vis.length) return;
+  if(!confirm('¿Aprobar las '+vis.length+' publicaciones visibles?')) return;
+  vis.forEach(id=>{state.approved[id]=true;delete state.skipped[id];});
+  save();render();
+};
+$('#sendBunker').onclick=()=>{
+  const a=posts.filter(p=>statusOf(p.id)==='approved').length, c=posts.filter(p=>statusOf(p.id)==='changes').length;
+  const adA=Object.keys(state.adApproved).length, adC=Object.keys(state.adSkipped).length;
+  if(!confirm(`Enviar la revisión al equipo:\n• Publicaciones aprobadas: ${a}\n• Con cambios: ${c}\n• Pendientes: ${posts.length-a-c}\n• Anuncios aprobados: ${adA} · con cambios: ${adC}`)) return;
+  const btn=$('#sendBunker'); btn.disabled=true; btn.textContent='Enviando…';
+  persist(false).then(ok=>{btn.disabled=false;btn.textContent='Enviar al equipo ✓';
+    alert(ok?'¡Gracias! El equipo ya puede ver tus respuestas.':'No se pudo enviar. Revisa tu conexión e inténtalo de nuevo.');});
+};
+$('#export').onclick=()=>{
+  const blob=new Blob([JSON.stringify({client:BUNKER_CLIENT,campaign:BUNKER_CAMPAIGN,review:buildReview()},null,1)],{type:'application/json'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='revision-creditos-sep-oct-2026.json';a.click();
+};
+$('#whatsapp').onclick=()=>{
+  const a=posts.filter(p=>statusOf(p.id)==='approved').length, c=posts.filter(p=>statusOf(p.id)==='changes').length;
+  const cambios=posts.filter(p=>statusOf(p.id)==='changes').map(p=>`• Día ${p.day} (${p.format}): ${state.notes[p.id]||'sin detalle'}`).join('\n');
+  const txt=`Revisión de Créditos a tu medida — sep-oct 2026\nAprobadas: ${a}\nCon cambios: ${c}\nPendientes: ${posts.length-a-c}\n${cambios?'\nCambios solicitados:\n'+cambios:''}`;
+  window.open('https://wa.me/526563748899?text='+encodeURIComponent(txt),'_blank');
+};
+$('#reset').onclick=()=>{if(!confirm('¿Borrar las marcas de esta revisión en este dispositivo?'))return;state={approved:{},skipped:{},notes:{},edits:{},adApproved:{},adSkipped:{}};localStorage.removeItem(KEY);render();};
+
+(async function init(){
+  loadLocal(); typeOptions();
+  const [cal,ads]=await Promise.all([fetch('calendar.json').then(r=>r.json()),fetch('ads.json').then(r=>r.json())]);
+  posts=cal.posts; adsData=ads;
+  await mergePocketBase();
+  render();
+  setTimeout(()=>$('#loader').classList.add('hide'),250);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,399 @@
+{
+ "client": "Créditos a tu medida",
+ "campaign": "14 sep – 13 oct 2026",
+ "posts": [
+  {
+   "id": 1,
+   "day": 1,
+   "date": "Lun 14 sep",
+   "format": "Reel",
+   "pillar": "Presentación",
+   "copy": "Si trabajas en el IMSS, en el ISSSTE, en CFE, en Pemex o eres maestro… este crédito se descuenta directo de tu nómina. Sin filas, sin trámites eternos.\n\n— — —\n\nSomos Créditos a tu medida, en Zona Pronaf. Llevamos más de 20 años prestando en Ciudad Juárez de la mano de Financiera Fortaleza. Un asesor te acompaña de principio a fin.\n\n— — —\n\n¿Trabajas en el gobierno o en educación? Escríbeme **DEPENDE** por WhatsApp al 656 374 8899 y te digo exactamente qué documentos necesitas.",
+   "production": "📹 Producción: asesor real a cuadro, en la oficina, hablando a cámara. Vertical, 20-30 s, subtítulos grandes. Publicar el mismo día que se graba.",
+   "visuals": [
+    "posts/plantilla-reel.png"
+   ],
+   "visualNote": "Plantilla del sistema visual: el arte final de este día se produce al aprobar el estilo"
+  },
+  {
+   "id": 2,
+   "day": 2,
+   "date": "Mar 15 sep",
+   "format": "Carrusel 4 tarjetas",
+   "pillar": "Educación",
+   "copy": "El crédito no se complica: son 3 requisitos y listo.\n\n— — —\n\n1️⃣ Identificación oficial vigente\n2️⃣ Comprobante de ingresos\n3️⃣ Comprobante de domicilio\n\n— — —\n\nNo necesitas historial crediticio perfecto. ¿Cuál de los tres te falta? Escríbelo en los comentarios y te digo cómo resolverlo.",
+   "production": "🖼️ Producción: tarjeta 1 = portada con el título; tarjetas 2-4 = un requisito cada una con ícono. Texto grande, fondo navy, acento dorado.",
+   "visuals": [
+    "posts/ejemplo-B_dia2_t1.png",
+    "posts/ejemplo-B_dia2_t2.png",
+    "posts/ejemplo-B_dia2_t3.png",
+    "posts/ejemplo-B_dia2_t4.png"
+   ],
+   "visualNote": "Arte real ya producido"
+  },
+  {
+   "id": 3,
+   "day": 3,
+   "date": "Mié 16 sep",
+   "format": "Foto",
+   "pillar": "Confianza",
+   "copy": "Aquí puedes venir en persona y sentarte con un asesor. Nada de trámites en línea que nadie te explica.\n\n— — —\n\n📍 Benjamín Franklin 3220, Int 22-D, Zona Pronaf, Ciudad Juárez\n🕘 Lunes a viernes 9:00 - 18:00 · Sábado 9:00 - 14:00\n\n— — —\n\nGuarda esta publicación para que no andes buscando la dirección después. ¿Te queda lejos la Zona Pronaf o te queda cerca?",
+   "production": "📷 Producción: foto real de la fachada/oficina (luz de día), formato 4:5.",
+   "visuals": [
+    "posts/plantilla-post.png"
+   ],
+   "visualNote": "Plantilla del sistema visual: el arte final de este día se produce al aprobar el estilo"
+  },
+  {
+   "id": 4,
+   "day": 4,
+   "date": "Jue 17 sep",
+   "format": "Imagen + pregunta",
+   "pillar": "Comunidad",
+   "copy": "¿De qué dependencia recibes tu nómina?\n\n— — —\n\nIMSS, ISSSTE, CFE, Pemex, educación, gobierno del estado… cada dependencia pide un comprobante distinto, y ahí es donde la gente se atora.\n\n— — —\n\nDime en los comentarios de qué dependencia eres y te digo qué documento te piden. Sin compromiso.",
+   "production": "🖼️ Producción: imagen con las dependencias en lista, texto grande. Marcar como publicación destacada temporalmente.",
+   "visuals": [
+    "posts/plantilla-post.png"
+   ],
+   "visualNote": "Plantilla del sistema visual: el arte final de este día se produce al aprobar el estilo"
+  },
+  {
+   "id": 5,
+   "day": 5,
+   "date": "Vie 18 sep",
+   "format": "Reel",
+   "pillar": "Educación",
+   "copy": "Te descuentan del mismo recibo de tu nómina. Así de simple.\n\n— — —\n\nNo tienes que ir al banco ni pagar en efectivo: el descuento va en tu quincena, en pagos que ya tienes contemplados. Por eso es más fácil de llevar que un crédito personal.\n\n— — —\n\nManda este video a esa persona que lleva meses pensándolo y no se anima. Y si eres tú, escríbeme por WhatsApp al 656 374 8899.",
+   "production": "📹 Producción: asesor a cuadro + corte de apoyo mostrando un recibo de nómina (sin datos personales reales).",
+   "visuals": [
+    "posts/plantilla-reel.png"
+   ],
+   "visualNote": "Plantilla del sistema visual: el arte final de este día se produce al aprobar el estilo"
+  },
+  {
+   "id": 6,
+   "day": 6,
+   "date": "Sáb 19 sep",
+   "format": "Carrusel",
+   "pillar": "Educación",
+   "copy": "¿Qué papel te piden? Depende de tu dependencia.\n\n— — —\n\nIMSS → NSS\nISSSTE → número de ISSSTE\nCFE / Pemex → ficha del trabajador\nSNTE (maestros) → RFC o CURP\n\n— — —\n\nDime tu dependencia en los comentarios y te confirmo tu comprobante exacto antes de que vengas.",
+   "production": "🖼️ Producción: una tarjeta por dependencia, tipografía grande, mismo estilo del Día 2.",
+   "visuals": [
+    "posts/plantilla-carrusel.png"
+   ],
+   "visualNote": "Plantilla del sistema visual: el arte final de este día se produce al aprobar el estilo"
+  },
+  {
+   "id": 7,
+   "day": 7,
+   "date": "Dom 20 sep",
+   "format": "Story + Grupos",
+   "pillar": "Comunidad",
+   "copy": "Comparte esto en tu grupo de trabajo 👇\n\n— — —\n\nSi en tu grupo de WhatsApp hay maestros, personal del IMSS o jubilados de CFE, este Reel les va a servir más que a nadie: explica qué documentos se piden por dependencia.\n\n— — —\n\nMándalo a tu grupo (el del trabajo, no el de la familia 😄) y dime en comentarios en cuál lo compartiste.",
+   "production": "📹 Producción: recortar el Reel del Día 5 en formato 9:16 para el compartido + Story con sticker de enlace. ## Semana 2",
+   "visuals": [
+    "posts/plantilla-story.png"
+   ],
+   "visualNote": "Plantilla del sistema visual: el arte final de este día se produce al aprobar el estilo"
+  },
+  {
+   "id": 8,
+   "day": 8,
+   "date": "Lun 21 sep",
+   "format": "Reel",
+   "pillar": "Proceso",
+   "copy": "Empezar toma 2 minutos y no cuesta nada.\n\n— — —\n\nNos escribes por WhatsApp, te pregunto por tu dependencia y te digo qué documentos necesitas. Si no te conviene, me dices que no y ya: nadie te va a estar marcando.\n\n— — —\n\nMándame un mensaje al 656 374 8899 con la palabra **INFO** y arrancamos hoy.",
+   "production": "",
+   "visuals": [
+    "posts/plantilla-reel.png"
+   ],
+   "visualNote": "Plantilla del sistema visual: el arte final de este día se produce al aprobar el estilo"
+  },
+  {
+   "id": 9,
+   "day": 9,
+   "date": "Mar 22 sep",
+   "format": "Carrusel",
+   "pillar": "Educación",
+   "copy": "Así es el proceso completo, sin letras chiquitas.\n\n— — —\n\n1️⃣ Nos escribes por WhatsApp o llenas el formulario\n2️⃣ Revisamos tu caso y juntamos tus documentos\n3️⃣ Firmas tu contrato\n4️⃣ Recibes tu dinero\n\n— — —\n\n¿En qué paso te gustaría saber más? Pregúntame en comentarios y te contesto uno por uno.",
+   "production": "",
+   "visuals": [
+    "posts/plantilla-carrusel.png"
+   ],
+   "visualNote": "Plantilla del sistema visual: el arte final de este día se produce al aprobar el estilo"
+  },
+  {
+   "id": 10,
+   "day": 10,
+   "date": "Mié 23 sep",
+   "format": "Imagen",
+   "pillar": "Beneficio",
+   "copy": "Antes de las 3 de la tarde, entra el mismo día. 💸\n\n— — —\n\nSi solicitas antes de las 3:00 pm y todo está en orden, tu crédito se aprueba y se deposita ese mismo día. Después de esa hora, el depósito cae al día siguiente.\n\n— — —\n\n¿A qué hora podrías venir tú? Dime en los comentarios y te digo si alcanzas el mismo día.",
+   "production": "",
+   "visuals": [
+    "posts/ejemplo-A_dia10_post.png"
+   ],
+   "visualNote": "Arte real ya producido"
+  },
+  {
+   "id": 11,
+   "day": 11,
+   "date": "Jue 24 sep",
+   "format": "Imagen + pregunta",
+   "pillar": "Comunidad",
+   "copy": "¿En qué lo usarías tú?\n\n— — —\n\nArreglar la casa, pagar un adeudo que trae intereses, la colegiatura, un viaje con la familia… Casi siempre es para algo que ya traes pensando desde hace meses.\n\n— — —\n\nCuéntame en los comentarios en qué lo usarías. Leo todos.",
+   "production": "",
+   "visuals": [
+    "posts/plantilla-post.png"
+   ],
+   "visualNote": "Plantilla del sistema visual: el arte final de este día se produce al aprobar el estilo"
+  },
+  {
+   "id": 12,
+   "day": 12,
+   "date": "Vie 25 sep",
+   "format": "Reel",
+   "pillar": "Confianza",
+   "copy": "Llevamos más de 20 años prestando en Juárez. Eso no se improvisa.\n\n— — —\n\nCréditos a tu medida trabaja de la mano de Financiera Fortaleza, S.A. de C.V., SOFOM, E.N.R.: 20+ años en el mercado, 100% mexicana. No somos una app nueva ni un intermediario.\n\n— — —\n\nSi alguien de tu familia ya es cliente nuestro, etiquétalo. Y si quieres saber si tu dependencia está con nosotros, comenta aquí.",
+   "production": "",
+   "visuals": [
+    "posts/plantilla-reel.png"
+   ],
+   "visualNote": "Plantilla del sistema visual: el arte final de este día se produce al aprobar el estilo"
+  },
+  {
+   "id": 13,
+   "day": 13,
+   "date": "Sáb 26 sep",
+   "format": "Foto",
+   "pillar": "Confianza",
+   "copy": "Los asesores sí estamos aquí, no somos un chatbot.\n\n— — —\n\nSábado de 9:00 a 14:00 hay asesor en la oficina de Zona Pronaf. Te sientas, te explicamos tu caso con calma y sales sabiendo exactamente cuánto, cómo y cuándo.\n\n— — —\n\n¿Te acomoda el sábado o prefieres entre semana? Escríbeme por WhatsApp 656 374 8899 y aparto tu espacio.",
+   "production": "",
+   "visuals": [
+    "posts/plantilla-post.png"
+   ],
+   "visualNote": "Plantilla del sistema visual: el arte final de este día se produce al aprobar el estilo"
+  },
+  {
+   "id": 14,
+   "day": 14,
+   "date": "Dom 27 sep",
+   "format": "Story + Grupos",
+   "pillar": "Comunidad",
+   "copy": "Recordatorio de domingo: mañana abrimos 9:00 am.\n\n— — —\n\nSábado: 9:00 - 14:00 en la oficina.\nEntre semana: 9:00 - 18:00.\n\nMándame mensaje hoy y te digo qué documentos llevar para no hacerte perder el viaje.",
+   "production": "📹 Producción: Story con la dirección y horario en sticker de texto. ## Semana 3",
+   "visuals": [
+    "posts/plantilla-story.png"
+   ],
+   "visualNote": "Plantilla del sistema visual: el arte final de este día se produce al aprobar el estilo"
+  },
+  {
+   "id": 15,
+   "day": 15,
+   "date": "Lun 28 sep",
+   "format": "Reel",
+   "pillar": "Objeción",
+   "copy": "Un buró manchado no te descalifica. 👀\n\n— — —\n\nNo pedimos historial crediticio perfecto. Revisamos tu caso de forma individual: dependencia, antigüedad y capacidad de descuento. Hay casos que sí califican aunque la persona ya se había dado por descartada.\n\n— — —\n\nCuéntame en comentarios si ya te habían dicho que no en otro lado. Quiero leerte.",
+   "production": "",
+   "visuals": [
+    "posts/plantilla-reel.png"
+   ],
+   "visualNote": "Plantilla del sistema visual: el arte final de este día se produce al aprobar el estilo"
+  },
+  {
+   "id": 16,
+   "day": 16,
+   "date": "Mar 29 sep",
+   "format": "Carrusel",
+   "pillar": "Renovación",
+   "copy": "¿Ya eres cliente? Renovar te conviene.\n\n— — —\n\nAl renovar puedes pagar menos al mes y recibir dinero extra en el proceso. Y el trámite es más rápido que la primera vez, porque tus documentos ya están en tu expediente.\n\n— — —\n\nEscríbeme **RENOVAR** por WhatsApp al 656 374 8899 y te digo qué necesito de ti para revisar tu caso hoy mismo.",
+   "production": "",
+   "visuals": [
+    "posts/plantilla-carrusel.png"
+   ],
+   "visualNote": "Plantilla del sistema visual: el arte final de este día se produce al aprobar el estilo"
+  },
+  {
+   "id": 17,
+   "day": 17,
+   "date": "Mié 30 sep",
+   "format": "Imagen",
+   "pillar": "Transparencia",
+   "copy": "Lo que firmas es lo que pagas.\n\n— — —\n\nSin comisiones ocultas, sin sorpresas al final. Tu contrato dice exactamente cuánto y cuándo. Si algo no te queda claro, te lo explicamos antes de que firmes — no después.\n\n— — —\n\n¿Te han cobrado comisiones que no te esperabas en otro lado? Cuéntalo en comentarios (sin nombres) para que a otros no les pase.",
+   "production": "",
+   "visuals": [
+    "posts/plantilla-post.png"
+   ],
+   "visualNote": "Plantilla del sistema visual: el arte final de este día se produce al aprobar el estilo"
+  },
+  {
+   "id": 18,
+   "day": 18,
+   "date": "Jue 1 oct",
+   "format": "Imagen + pregunta",
+   "pillar": "Comunidad",
+   "copy": "¿Ya te llegó el pago? 🗓️\n\n— — —\n\nAprovecha estos días para ordenar tus finanzas: si traes un adeudo caro dando vueltas, un crédito vía nómina con pago fijo puede dejarte la quincena más tranquila.\n\n— — —\n\nComenta de qué dependencia eres y te digo cuándo podrías tener tu dinero.",
+   "production": "",
+   "visuals": [
+    "posts/plantilla-post.png"
+   ],
+   "visualNote": "Plantilla del sistema visual: el arte final de este día se produce al aprobar el estilo"
+  },
+  {
+   "id": 19,
+   "day": 19,
+   "date": "Vie 2 oct",
+   "format": "Reel",
+   "pillar": "Caso real",
+   "copy": "\"Quería arreglar mi casa y no sabía por dónde empezar.\"\n\n— — —\n\nDoña Marta es pensionada del ISSSTE. Vino a la oficina, revisamos su caso y en la misma semana pudo empezar su remodelación. *(Caso real, con autorización firmada para publicar.)*\n\n— — —\n\n¿Qué quieres arreglar tú? Cuéntame en comentarios y vemos cómo ayudarte.",
+   "production": "⚠️ Producción: solo se publica con la carta de autorización firmada del cliente. Si no está firmada el 2 de octubre, se sustituye por el Día 13 (foto de oficina) o por un Reel de preguntas frecuentes.",
+   "visuals": [
+    "posts/plantilla-reel.png"
+   ],
+   "visualNote": "Plantilla del sistema visual: el arte final de este día se produce al aprobar el estilo"
+  },
+  {
+   "id": 20,
+   "day": 20,
+   "date": "Sáb 3 oct",
+   "format": "Foto",
+   "pillar": "Confianza",
+   "copy": "Aquí te explicamos hasta que quede claro. Sin prisa.\n\n— — —\n\nHay quien llega con miedo de \"no entenderle\" al contrato. Nos sentamos, te lo leemos juntos y hasta que no quede claro, no firmas nada. Así trabajamos.\n\n— — —\n\nVen sin cita el sábado (9:00 - 14:00) o mándame mensaje y te aparto lugar entre semana.",
+   "production": "",
+   "visuals": [
+    "posts/plantilla-post.png"
+   ],
+   "visualNote": "Plantilla del sistema visual: el arte final de este día se produce al aprobar el estilo"
+  },
+  {
+   "id": 21,
+   "day": 21,
+   "date": "Dom 4 oct",
+   "format": "Story + Grupos",
+   "pillar": "Comunidad",
+   "copy": "Encuesta de domingo 👇\n\n— — —\n\n¿Qué es lo que más te detiene para solicitar tu crédito?\nA) No sé qué documentos llevar\nB) Me da miedo que no me alcance para pagar\nC) Ya me dijeron que no en otro lado\nD) Me da flojera el trámite\n\nVota en la encuesta y el lunes te contesto la opción que gane, con todo detalle.",
+   "production": "📹 Producción: encuesta nativa de Facebook/Instagram (no imagen). ## Semana 4",
+   "visuals": [
+    "posts/plantilla-story.png"
+   ],
+   "visualNote": "Plantilla del sistema visual: el arte final de este día se produce al aprobar el estilo"
+  },
+  {
+   "id": 22,
+   "day": 22,
+   "date": "Lun 5 oct",
+   "format": "Reel",
+   "pillar": "Conversión",
+   "copy": "Trae esto a tu cita y salimos con todo listo. ✅\n\n— — —\n\n1️⃣ Identificación oficial vigente\n2️⃣ Comprobante de ingresos\n3️⃣ Comprobante de domicilio\n\nCon eso revisamos tu caso en la misma visita. Agenda hoy por WhatsApp al 656 374 8899.\n\n— — —\n\n¿Te falta alguno? Dime cuál en comentarios y te digo qué hacer.",
+   "production": "",
+   "visuals": [
+    "posts/plantilla-reel.png"
+   ],
+   "visualNote": "Plantilla del sistema visual: el arte final de este día se produce al aprobar el estilo"
+  },
+  {
+   "id": 23,
+   "day": 23,
+   "date": "Mar 6 oct",
+   "format": "Carrusel",
+   "pillar": "Educación",
+   "copy": "¿Cómo se descuenta un crédito vía nómina? Así funciona.\n\n— — —\n\nEl pago se va directo de tu quincena, con un monto fijo que ya tienes contemplado. No tienes que acordarte de ir a pagar ni de transferir cada mes: se descuenta y listo.\n\n— — —\n\nSi quieres saber si tu dependencia maneja este esquema, escríbeme tu dependencia en los comentarios y te contesto.",
+   "production": "",
+   "visuals": [
+    "posts/plantilla-carrusel.png"
+   ],
+   "visualNote": "Plantilla del sistema visual: el arte final de este día se produce al aprobar el estilo"
+  },
+  {
+   "id": 24,
+   "day": 24,
+   "date": "Mié 7 oct",
+   "format": "Imagen",
+   "pillar": "Conversión",
+   "copy": "Recordatorio: antes de las 3 y cae hoy. ⏰\n\n— — —\n\nEs la diferencia entre recibir tu dinero hoy o mañana. Si alcanzas antes de las 3:00 pm con tus documentos, el depósito entra el mismo día.\n\n— — —\n\nEscríbeme **AHORA** por WhatsApp 656 374 8899 y revisamos si alcanzas.",
+   "production": "",
+   "visuals": [
+    "posts/plantilla-post.png"
+   ],
+   "visualNote": "Plantilla del sistema visual: el arte final de este día se produce al aprobar el estilo"
+  },
+  {
+   "id": 25,
+   "day": 25,
+   "date": "Jue 8 oct",
+   "format": "Imagen + pregunta",
+   "pillar": "Comunidad",
+   "copy": "¿Cuánto tiempo llevas diciendo \"el próximo mes lo veo\"? 😅\n\n— — —\n\nMeses, años… y mientras tanto el adeudo sigue generando intereses o el arreglo de la casa sigue esperando. A veces sólo falta una llamada.\n\n— — —\n\nSé honesto con los comentarios: ¿cuánto llevas posponiéndolo?",
+   "production": "",
+   "visuals": [
+    "posts/plantilla-post.png"
+   ],
+   "visualNote": "Plantilla del sistema visual: el arte final de este día se produce al aprobar el estilo"
+  },
+  {
+   "id": 26,
+   "day": 26,
+   "date": "Vie 9 oct",
+   "format": "Reel",
+   "pillar": "Prueba social",
+   "copy": "IMSS, ISSSTE, CFE, maestros: todos con el mismo proceso.\n\n— — —\n\nLo que cambia es el comprobante que te piden. Lo que no cambia es el trato: un asesor te acompaña desde la primera pregunta hasta que el dinero está en tu cuenta. *(Clientes reales con autorización firmada.)*\n\n— — —\n\nComparte este video con tu compañero de trabajo. Seguro hay alguien ahí que lleva meses queriendo preguntar y no se anima.",
+   "production": "⚠️ Producción: solo con carta de autorización firmada de cada persona. Si no están, se graba al asesor explicando las 4 dependencias.",
+   "visuals": [
+    "posts/plantilla-reel.png"
+   ],
+   "visualNote": "Plantilla del sistema visual: el arte final de este día se produce al aprobar el estilo"
+  },
+  {
+   "id": 27,
+   "day": 27,
+   "date": "Sáb 10 oct",
+   "format": "Foto",
+   "pillar": "Confianza",
+   "copy": "Este es el equipo que te va a atender. 👋\n\n— — —\n\nNada de call centers ni números que cambian cada mes. Somos los mismos de Zona Pronaf, los mismos que te contestan por WhatsApp y los mismos que te esperan en la oficina.\n\n— — —\n\n¿Alguno ya te atendió antes? Etiquétalo en los comentarios.",
+   "production": "",
+   "visuals": [
+    "posts/plantilla-post.png"
+   ],
+   "visualNote": "Plantilla del sistema visual: el arte final de este día se produce al aprobar el estilo"
+  },
+  {
+   "id": 28,
+   "day": 28,
+   "date": "Dom 11 oct",
+   "format": "Story + Grupos",
+   "pillar": "Comunidad",
+   "copy": "Guarda esto para la semana 📌\n\n— — —\n\nRequisitos: identificación oficial, comprobante de ingresos, comprobante de domicilio.\nOficina: Benjamín Franklin 3220, Int 22-D, Zona Pronaf.\nWhatsApp: 656 374 8899 · Lun-Vie 9:00-18:00 · Sáb 9:00-14:00.\n\n— — —\n\nMándale esta publicación a quien le pueda servir.",
+   "production": "",
+   "visuals": [
+    "posts/plantilla-story.png"
+   ],
+   "visualNote": "Plantilla del sistema visual: el arte final de este día se produce al aprobar el estilo"
+  },
+  {
+   "id": 29,
+   "day": 29,
+   "date": "Lun 12 oct",
+   "format": "Reel",
+   "pillar": "Conversión",
+   "copy": "Cerramos la agenda de octubre esta semana. ⏳\n\n— — —\n\nSi quieres que tu crédito quede resuelto en octubre, esta es la semana de venir. Después se nos llena y ya te toca la siguiente.\n\n— — —\n\nEscríbeme **CITA** por WhatsApp al 656 374 8899 y te aparto un horario para esta semana.",
+   "production": "",
+   "visuals": [
+    "posts/plantilla-reel.png"
+   ],
+   "visualNote": "Plantilla del sistema visual: el arte final de este día se produce al aprobar el estilo"
+  },
+  {
+   "id": 30,
+   "day": 30,
+   "date": "Mar 13 oct",
+   "format": "Imagen + carrusel",
+   "pillar": "Cierre",
+   "copy": "Gracias por seguirnos este mes. 🙌\n\n— — —\n\nEn 30 días te contamos quiénes somos, qué documentos se piden por dependencia, cómo se descuenta el crédito y en cuánto tiempo cae el dinero. Si te perdiste algo, aquí está todo:\n\n— — —\n\nEmpieza hoy de la forma más fácil: mándame un mensaje al 656 374 8899. Contestamos en horario de oficina: lunes a viernes 9:00-18:00, sábado 9:00-14:00.\n\n## Primer comentario (regla fija)\nEn cada publicación, el equipo comenta **desde la página** en los primeros 10 minutos, con una frase útil y una pregunta de seguimiento. Ejemplo para el Día 2:\n\n> Equipo Créditos a tu medida: si te falta el comprobante de ingresos, no te preocupes — depende de tu dependencia. Dime cuál y te digo exactamente qué llevar. 👇\n\nY se responde **todo** comentario con al menos 5 palabras (nada de \"gracias 🙂\"), en menos de 2 horas en horario de oficina. Eso es lo que el algoritmo 2026 sí premia.\n\n## Copy del warm up (Día 0)\n> ¿Qué lindo gatito te gusta? 🐈 Te lo presto.\n> Cuéntame en los comentarios cómo se llama tu gatito (o cómo se llamaba). Leo todos. 💛\n\n*(Si prefieres el original: \"Regálame un LIKE si te gustó\" — funciona, pero rinde menos que la pregunta.)*",
+   "production": "",
+   "visuals": [
+    "posts/plantilla-post.png"
+   ],
+   "visualNote": "Plantilla del sistema visual: el arte final de este día se produce al aprobar el estilo"
+  }
+ ]
+}
