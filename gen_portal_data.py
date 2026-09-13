@@ -73,8 +73,11 @@ for b in blocks[1:]:
         "pillar": pillar,
         "copy": copy_text,
         "production": production,
-        "visuals": VISUAL_OVERRIDE.get(day) or [f"posts/dia-{day:02d}.png"],
-        "visualNote": "Propuesta con foto documental de jubilados y pensionados; la foto definitiva de este día se produce o valida contigo",
+        "visuals": VISUAL_OVERRIDE.get(day) or ([f"posts/dia-{day:02d}.png", f"posts/reel-{day:02d}.png"]
+                                                if fmt.startswith(("Reel", "Story")) else [f"posts/dia-{day:02d}.png"]),
+        "visualNote": ("1:1 para el feed (no se corta). La segunda imagen es la versión 9:16 para cuando este día se publique como Reel de video."
+                       if fmt.startswith(("Reel", "Story")) else
+                       "Propuesta con foto documental de jubilados y pensionados; la foto definitiva de este día se produce o valida contigo"),
     })
 
 posts.sort(key=lambda p: p["day"])
