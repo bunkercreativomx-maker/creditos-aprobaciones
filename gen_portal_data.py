@@ -23,11 +23,7 @@ VISUAL_BY_FORMAT = {
 }
 
 # Ejemplos ya producidos: se muestran como arte real de esos días
-VISUAL_OVERRIDE = {
-    2: ["posts/ejemplo-B_dia2_t1.png", "posts/ejemplo-B_dia2_t2.png",
-        "posts/ejemplo-B_dia2_t3.png", "posts/ejemplo-B_dia2_t4.png"],
-    10: ["posts/ejemplo-A_dia10_post.png"],
-}
+VISUAL_OVERRIDE = {}   # todas las piezas llevan gente: posts/dia-NN.png
 
 EXTRA = {
     "Día 19": "Solo se publica con carta de autorización firmada del cliente. Si no está firmada a esa fecha, se sustituye por la foto de oficina del Día 13 o por un Reel de preguntas frecuentes.",
@@ -77,9 +73,8 @@ for b in blocks[1:]:
         "pillar": pillar,
         "copy": copy_text,
         "production": production,
-        "visuals": VISUAL_OVERRIDE.get(day) or [VISUAL_BY_FORMAT.get(fmt, "posts/plantilla-post.png")],
-        "visualNote": ("Arte real ya producido" if day in VISUAL_OVERRIDE
-                       else "Plantilla del sistema visual: el arte final de este día se produce al aprobar el estilo"),
+        "visuals": VISUAL_OVERRIDE.get(day) or [f"posts/dia-{day:02d}.png"],
+        "visualNote": "Propuesta con foto documental de jubilados y pensionados; la foto definitiva de este día se produce o valida contigo",
     })
 
 posts.sort(key=lambda p: p["day"])
@@ -90,35 +85,35 @@ json.dump({"client": "Créditos a tu medida", "campaign": "14 sep – 13 oct 202
 
 ads = [
     {"id": "META-01", "name": "Testimonio en video", "objective": "Mensajes a WhatsApp",
-     "audience": "Amplia, 30-70 años, Ciudad Juárez + 25 km",
+     "audience": "Amplia, 55-80 años (jubilados y pensionados), Ciudad Juárez + 25 km",
      "creative": "Cliente real contando su proceso (con carta de autorización). Video vertical 9:16.",
      "primary": ["Doña Marta es pensionada del ISSSTE y llevaba meses queriendo arreglar su casa. Vino a la oficina, revisamos su caso y lo resolvimos. Si tú también lo has estado posponiendo, escríbenos y te decimos exactamente qué necesitas.",
                   "¿Llevas meses pensando en pedir tu crédito y no te animas? Nunca vas a estar seguro hasta preguntar. Un asesor te dice si tu caso califica, sin compromiso."],
-     "headline": ["Pensionados y jubilados: crédito vía nómina", "Pregúntanos sin compromiso"],
+     "headline": ["Pensionados y jubilados: crédito con descuento de tu pensión", "Pregúntanos sin compromiso"],
      "cta": "Enviar mensaje"},
     {"id": "META-02", "name": "Demo de proceso", "objective": "Mensajes a WhatsApp",
-     "audience": "Amplia, 30-70 años, Ciudad Juárez + 25 km",
+     "audience": "Amplia, 55-80 años (jubilados y pensionados), Ciudad Juárez + 25 km",
      "creative": "Asesor a cuadro explicando los 3 requisitos en 20 s. Vertical y cuadrada.",
      "primary": ["Son 3 requisitos y no dependen de tu historial crediticio. Te explicamos cuáles son según tu dependencia antes de que vayas a la oficina.",
-                  "IMSS, ISSSTE, CFE, Pemex y educación: cada dependencia pide un comprobante distinto. Mándanos tu dependencia por WhatsApp y te decimos exactamente qué llevar."],
+                  "IMSS, ISSSTE, CFE, Pemex y magisterio: cada dependencia pide un comprobante distinto. Mándanos de qué dependencia recibes tu pensión y te decimos exactamente qué llevar."],
      "headline": ["3 requisitos, sin filas", "Te decimos qué llevar"],
      "cta": "Enviar mensaje"},
     {"id": "META-03", "name": "Carrusel por dependencia", "objective": "Mensajes a WhatsApp",
-     "audience": "Amplia, 30-70 años, Ciudad Juárez + 25 km",
+     "audience": "Amplia, 55-80 años (jubilados y pensionados), Ciudad Juárez + 25 km",
      "creative": "Carrusel de 4 tarjetas: cada dependencia con su comprobante de ingresos.",
-     "primary": ["¿Sabes qué comprobante de ingresos te piden? Depende de tu dependencia: NSS del IMSS, número de ISSSTE, ficha de CFE o Pemex, RFC o CURP si eres maestro.",
+     "primary": ["¿Sabes qué comprobante de ingresos te piden? Depende de tu dependencia: NSS del IMSS, número de ISSSTE, ficha de CFE o Pemex, RFC o CURP si eres maestro jubilado.",
                   "Preparamos la lista completa por dependencia para que no te hagan ir dos veces. Desliza y dime la tuya por WhatsApp."],
      "headline": ["Tu comprobante según tu dependencia", "Lista completa, sin vueltas"],
      "cta": "Enviar mensaje"},
     {"id": "META-04", "name": "Texto dominante (mismo día)", "objective": "Mensajes a WhatsApp",
-     "audience": "Amplia, 30-70 años, Ciudad Juárez + 25 km",
+     "audience": "Amplia, 55-80 años (jubilados y pensionados), Ciudad Juárez + 25 km",
      "creative": "Imagen limpia con tipografía grande: \"Crédito vía nómina · dinero el mismo día\".",
      "primary": ["Solicita antes de las 3:00 pm y tu crédito se aprueba y se deposita el mismo día. Más de 20 años prestando en Ciudad Juárez, con asesoría de principio a fin.",
                   "Antes de las 3 de la tarde entra el mismo día; después, cae al siguiente. Si quieres resolverlo hoy, escríbenos ahora."],
      "headline": ["Dinero el mismo día", "Solicita antes de las 3:00 pm"],
      "cta": "Enviar mensaje"},
     {"id": "META-05", "name": "Lifestyle (afinidad)", "objective": "Alcance / reconocimiento",
-     "audience": "Amplia, 30-70 años, Ciudad Juárez + 25 km",
+     "audience": "Amplia, 55-80 años (jubilados y pensionados), Ciudad Juárez + 25 km",
      "creative": "La señora mayor con el gatito (mismo estilo del warm up orgánico, sin promesa de producto).",
      "primary": ["Cuidar a los que quieres también es un plan financiero. Estamos en Zona Pronaf para ayudarte a ordenarlo.",
                   "Un gusto pequeño, una tranquilidad grande. Si quieres saber si te conviene un crédito vía nómina, aquí estamos."],
