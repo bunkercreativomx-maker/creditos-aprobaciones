@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Créditos a tu medida — Descarga de marca</title>
+<style>
+  :root{
+    --navy:#0b1424; --navy2:#122238; --gold:#c9a227; --gold-l:#e5c76b;
+    --cream:#f6f3ec; --muted:#9fb0c7; --green:#25D366;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    background:var(--navy); color:var(--cream);
+    background-image:radial-gradient(900px 420px at 12% -10%, rgba(201,162,39,.18), transparent 60%);
+    min-height:100vh; padding:24px 16px 64px;
+  }
+  .wrap{max-width:860px;margin:0 auto}
+  header{border-bottom:1px solid rgba(201,162,39,.35);padding-bottom:20px;margin-bottom:28px}
+  .brand{display:flex;align-items:center;gap:14px}
+  .monogram{
+    width:58px;height:58px;border-radius:14px;border:2px solid var(--gold);
+    background:var(--navy2);display:flex;align-items:center;justify-content:center;
+    font-weight:800;font-size:22px;color:#fff;letter-spacing:-1px;position:relative;flex:0 0 auto
+  }
+  .monogram span{color:var(--gold)}
+  h1{font-size:26px;margin:0;font-weight:700;letter-spacing:-.3px}
+  .sub{color:var(--muted);font-size:13px;margin-top:4px}
+  .hint{color:var(--muted);font-size:14px;line-height:1.6;margin:0 0 26px}
+  section{display:flex;flex-direction:column;gap:18px}
+  .card{
+    background:linear-gradient(180deg, rgba(255,255,255,.045), rgba(255,255,255,.015));
+    border:1px solid rgba(255,255,255,.10); border-radius:16px; overflow:hidden;
+  }
+  .preview{
+    background:
+      repeating-conic-gradient(#1b2b45 0% 25%, #16243a 0% 50%) 50%/22px 22px;
+    display:flex;align-items:center;justify-content:center;padding:18px;
+  }
+  .preview img{max-width:100%;max-height:300px;border-radius:8px;box-shadow:0 10px 30px rgba(0,0,0,.5);display:block}
+  .meta{padding:16px 18px 18px}
+  .meta h2{font-size:16px;margin:0 0 4px;font-weight:700}
+  .spec{color:var(--muted);font-size:12.5px;margin:0 0 14px;font-variant-numeric:tabular-nums}
+  a.btn{
+    display:inline-flex;align-items:center;gap:8px;text-decoration:none;
+    background:var(--gold); color:#20160a; font-weight:700; font-size:14px;
+    padding:11px 18px;border-radius:999px;
+  }
+  a.btn:active{transform:translateY(1px)}
+  .zip{
+    margin-top:26px;display:block;width:100%;cursor:pointer;border:0;
+    background:var(--green); color:#04220f; font-weight:800; font-size:15px;
+    padding:16px;border-radius:14px;
+  }
+  .zip:disabled{opacity:.6;cursor:wait}
+  footer{margin-top:26px;color:var(--muted);font-size:11.5px;line-height:1.7;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <div class="monogram">C<span>M</span></div>
+      <div>
+        <h1>Créditos a tu medida</h1>
+        <div class="sub">Archivos de marca · descarga directa</div>
+      </div>
+    </div>
+  </header>
+
+  <p class="hint">Cover oficial de Facebook y logotipo en alta resolución. Toca el botón dorado para descargar cada archivo, o baja el ZIP con los dos.</p>
+
+  <section>
+    <div class="card">
+      <div class="preview"><img src="cover-facebook-1640x624.png" alt="Cover de Facebook Créditos a tu medida"></div>
+      <div class="meta">
+        <h2>Cover de Facebook</h2>
+        <p class="spec">PNG · 1640 × 624 px · listo para subir sin recortes</p>
+        <a class="btn" href="cover-facebook-1640x624.png" download>⬇ Descargar cover</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="preview"><img src="logo-creditos-a-tu-medida-512.png" alt="Logotipo Créditos a tu medida"></div>
+      <div class="meta">
+        <h2>Logotipo</h2>
+        <p class="spec">PNG · 512 × 512 px · fondo azul marino, monograma CM dorado</p>
+        <a class="btn" href="logo-creditos-a-tu-medida-512.png" download>⬇ Descargar logo</a>
+      </div>
+    </div>
+  </section>
+
+  <button class="zip" id="zip">⬇ Descargar los 2 en un ZIP</button>
+
+  <footer>
+    Financiera Fortaleza, S.A. de C.V., SOFOM, E.N.R. · 20+ años en el mercado · Ciudad Juárez, Chih.<br>
+    WhatsApp 656 374 8899 · creditoatumedida.com
+  </footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+<script>
+(function(){
+  var files=[
+    {name:'cover-facebook-1640x624.png', src:'cover-facebook-1640x624.png'},
+    {name:'logo-creditos-a-tu-medida-512.png', src:'logo-creditos-a-tu-medida-512.png'}
+  ];
+  var btn=document.getElementById('zip');
+  btn.addEventListener('click', async function(){
+    if(typeof JSZip==='undefined'){ return; }
+    btn.disabled=true; var t=btn.textContent; btn.textContent='Preparando ZIP…';
+    try{
+      var zip=new JSZip();
+      for(var i=0;i<files.length;i++){
+        var r=await fetch(files[i].src);
+        zip.file(files[i].name, await r.blob());
+      }
+      var blob=await zip.generateAsync({type:'blob'});
+      var a=document.createElement('a');
+      a.href=URL.createObjectURL(blob);
+      a.download='creditos-a-tu-medida-marca.zip';
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(function(){URL.revokeObjectURL(a.href)},4000);
+    }catch(e){ alert('No se pudo generar el ZIP. Usa los botones de cada archivo.'); }
+    btn.disabled=false; btn.textContent=t;
+  });
+})();
+</script>
+</body>
+</html>
