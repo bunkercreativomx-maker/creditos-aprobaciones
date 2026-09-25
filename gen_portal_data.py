@@ -27,7 +27,7 @@ VISUAL_OVERRIDE = {}   # todas las piezas llevan gente: posts/dia-NN.png
 
 EXTRA = {
     "Día 19": "Solo se publica con carta de autorización firmada del cliente. Si no está firmada a esa fecha, se sustituye por la foto de oficina del Día 13 o por un Reel de preguntas frecuentes.",
-    "Día 26": "Solo con carta de autorización firmada de cada persona. Si no están, se graba al asesor explicando las cuatro dependencias.",
+    "Día 26": "Solo con carta de autorización firmada de cada persona. Si no están, se graba al asesor explicando las cinco dependencias (magisterio únicamente Sección 8).",
 }
 
 text = open(SRC, encoding="utf-8").read()
@@ -98,20 +98,20 @@ ads = [
      "audience": "Amplia, 55-80 años (jubilados y pensionados), Ciudad Juárez + 25 km",
      "creative": "Asesor a cuadro explicando los 3 requisitos en 20 s. Vertical y cuadrada.",
      "primary": ["Son 3 requisitos y no dependen de tu historial crediticio. Te explicamos cuáles son según tu dependencia antes de que vayas a la oficina.",
-                  "IMSS, ISSSTE, CFE, Pemex y magisterio: cada dependencia pide un comprobante distinto. Mándanos de qué dependencia recibes tu pensión y te decimos exactamente qué llevar."],
+                  "IMSS, ISSSTE, CFE, Pemex y SNTE Sección 8: cada dependencia pide un comprobante distinto. Mándanos de qué dependencia recibes tu pensión y te decimos exactamente qué llevar."],
      "headline": ["3 requisitos, sin filas", "Te decimos qué llevar"],
      "cta": "Enviar mensaje"},
     {"id": "META-03", "name": "Carrusel por dependencia", "objective": "Mensajes a WhatsApp",
      "audience": "Amplia, 55-80 años (jubilados y pensionados), Ciudad Juárez + 25 km",
      "creative": "Carrusel de 4 tarjetas: cada dependencia con su comprobante de ingresos.",
-     "primary": ["¿Sabes qué comprobante de ingresos te piden? Depende de tu dependencia: NSS del IMSS, número de ISSSTE, ficha de CFE o Pemex, RFC o CURP si eres maestro jubilado.",
+     "primary": ["¿Sabes qué comprobante de ingresos te piden? Depende de tu dependencia: NSS del IMSS, número de ISSSTE, ficha de CFE o Pemex, RFC o CURP si eres maestro jubilado de la Sección 8 del SNTE.",
                   "Preparamos la lista completa por dependencia para que no te hagan ir dos veces. Desliza y dime la tuya por WhatsApp."],
      "headline": ["Tu comprobante según tu dependencia", "Lista completa, sin vueltas"],
      "cta": "Enviar mensaje"},
     {"id": "META-04", "name": "Texto dominante (mismo día)", "objective": "Mensajes a WhatsApp",
      "audience": "Amplia, 55-80 años (jubilados y pensionados), Ciudad Juárez + 25 km",
      "creative": "Imagen limpia con tipografía grande: \"Crédito vía nómina · dinero el mismo día\".",
-     "primary": ["Solicita antes de las 3:00 pm y tu crédito se aprueba y se deposita el mismo día. Más de 20 años prestando en Ciudad Juárez, con asesoría de principio a fin.",
+     "primary": ["Solicita antes de las 3:00 pm y tu crédito se aprueba y se deposita el mismo día. Más de 8 años otorgando créditos en Ciudad Juárez, con asesoría de principio a fin.",
                   "Antes de las 3 de la tarde entra el mismo día; después, cae al siguiente. Si quieres resolverlo hoy, escríbenos ahora."],
      "headline": ["Dinero el mismo día", "Solicita antes de las 3:00 pm"],
      "cta": "Enviar mensaje"},
