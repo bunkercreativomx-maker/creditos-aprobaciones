@@ -72,19 +72,18 @@ Cuéntenos en los comentarios: ¿qué les gustaría saber primero? Leemos y cont
 
 &gt; Todo apunta a **creditoatumedida.com** (sitio web, no Messenger). Lineamientos vigentes de Meta a sep 2026: categoría especial de anuncios financieros, flujo unificado Advantage+, Pixel + Conversions API con deduplicación.
 
-## Estado del Pixel (revisado hoy)
-- **No había ningún Pixel** en creditoatumedida.com (sin `fbq`, sin `fbevents.js`).
-- **Ya dejé el código instalado** en el sitio. Está apagado hasta que pongas el ID:
-  - `PageView` en cada visita (nunca dentro del CRM).
-  - `Lead` cuando el formulario se envía con éxito (el que queda en el CRM).
-  - `Contact` al tocar cualquier botón de WhatsApp o teléfono.
-  - **Conversions API** desde el servidor, con el mismo `event_id` que el navegador (Meta los deduplica) y el teléfono hasheado. Recupera los leads que pierden los bloqueadores y el iPhone.
+## Estado del Pixel (verificado)
+- **Pixel `1401885575462193` activo** en creditoatumedida.com (probado con navegador real):
+  - `PageView` en cada visita ✅ (el CRM no carga el Pixel ✅)
+  - `Contact` al tocar WhatsApp o teléfono ✅
+  - `Lead` al enviar el formulario con éxito (ya conectado).
+- **Conversions API** del servidor: el código está listo, pero se enciende hasta que pongas el token (Paso 1.5 + 2).
 
 ## Paso 1 · Crear el Pixel (dataset) · 5 min
 1. Entra a **business.facebook.com** → **Administrador de eventos** (Events Manager).
 2. **Conectar orígenes de datos** → **Web** → nombre `Creditos a tu medida - Web` → **Crear**.
 3. Cuando pregunte cómo instalar, elige **&quot;Configurar manualmente&quot;**. No uses la integración de socios.
-4. Copia el **ID del conjunto de datos** (15-16 dígitos).
+4. ✅ Ya hecho: el ID es `1401885575462193`.
 5. En ese mismo dataset → **Configuración** → **API de conversiones** → **Generar token de acceso**. Cópialo.
 
 ## Paso 2 · Activarlo en Vercel · 3 min
@@ -92,7 +91,6 @@ Vercel → proyecto **creditos-a-tu-medida** → Settings → **Environment Vari
 
 | Variable | Valor |
 |---|---|
-| `NEXT_PUBLIC_META_PIXEL_ID` | el ID del paso 1.4 |
 | `META_CAPI_TOKEN` | el token del paso 1.5 (márcalo *Sensitive*) |
 | `NEXT_PUBLIC_FB_DOMAIN_VERIFICATION` | el código del paso 2b (opcional pero recomendado) |
 
