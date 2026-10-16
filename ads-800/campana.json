@@ -1,0 +1,64 @@
+{
+ "ads": [
+  {
+   "n": "01",
+   "id": "AD-01",
+   "nombre": "Depósito el mismo día",
+   "foto": "mismo-dia",
+   "angulo": "Rapidez (la oferta más fuerte del sitio)",
+   "primario": [
+    "Solicite antes de las 3:00 pm y, si sus documentos están en orden, su crédito se deposita ese mismo día.\n\nCrédito vía nómina para pensionados y jubilados del IMSS, ISSSTE, CFE, Pemex y SNTE Sección 8. El pago se descuenta directo de la pensión.\n\n👉 Deje sus datos en creditoatumedida.com y un asesor le llama en horario de oficina.",
+    "Antes de las 3 de la tarde, el depósito sale el mismo día; después, al día siguiente. Así de claro.\n\nPensionados y jubilados del IMSS, ISSSTE, CFE, Pemex y SNTE Sección 8, con atención en persona en Zona Pronaf. Más de 8 años otorgando créditos en Ciudad Juárez.\n\nInicie su solicitud en creditoatumedida.com"
+   ],
+   "titular": [
+    "Depósito el mismo día",
+    "Solicite antes de las 3:00 pm"
+   ],
+   "descripcion": "Sujeto a aprobación de crédito",
+   "cta": "Solicitar ahora",
+   "url": "https://creditoatumedida.com/?utm_source=facebook&utm_medium=paid_social&utm_campaign=creditos_800_oct26&utm_content=ad-01",
+   "f45": "piezas/01_AD-01_mismo-dia_4x5.png",
+   "f916": "piezas/01_AD-01_mismo-dia_9x16.png"
+  },
+  {
+   "n": "02",
+   "id": "AD-02",
+   "nombre": "Para quién es",
+   "foto": "dependencias",
+   "angulo": "Filtra al público correcto (dependencias)",
+   "primario": [
+    "Crédito vía nómina para pensionados y jubilados del IMSS, ISSSTE, CFE, Pemex y SNTE Sección 8 en Ciudad Juárez.\n\n✅ El pago se descuenta directo de la pensión\n✅ No necesita historial crediticio perfecto\n✅ Un asesor le acompaña de principio a fin\n\nSolicite en creditoatumedida.com",
+    "Pensionados y jubilados de IMSS, ISSSTE, CFE, Pemex y SNTE Sección 8: en Créditos a tu medida el trámite es claro y en persona, en Zona Pronaf.\n\nDeje sus datos en nuestra página y un asesor le contacta para explicarle todo, sin compromiso."
+   ],
+   "titular": [
+    "Crédito para pensionados y jubilados",
+    "IMSS · ISSSTE · CFE · Pemex · SNTE 8"
+   ],
+   "descripcion": "Financiera Fortaleza, SOFOM, E.N.R.",
+   "cta": "Solicitar ahora",
+   "url": "https://creditoatumedida.com/?utm_source=facebook&utm_medium=paid_social&utm_campaign=creditos_800_oct26&utm_content=ad-02",
+   "f45": "piezas/02_AD-02_dependencias_4x5.png",
+   "f916": "piezas/02_AD-02_dependencias_9x16.png"
+  },
+  {
+   "n": "03",
+   "id": "AD-03",
+   "nombre": "INE + NSS",
+   "foto": "ine-nss",
+   "angulo": "Facilidad para empezar",
+   "primario": [
+    "Con su INE y su número de seguro social le cotizamos. Así de fácil empieza su crédito vía nómina.\n\nNo necesita historial crediticio perfecto: cada caso se revisa de forma individual.\n\nPara pensionados y jubilados del IMSS, ISSSTE, CFE, Pemex y SNTE Sección 8. Cotice sin compromiso en creditoatumedida.com",
+    "Cotizar no cuesta nada. Deje su nombre y teléfono en creditoatumedida.com y un asesor le explica qué documentos necesita según su dependencia.\n\nAtención en persona: Benjamín Franklin 3220, Int 22-D, Zona Pronaf (por la entrada de Subway)."
+   ],
+   "titular": [
+    "Con su INE y NSS le cotizamos",
+    "Cotice sin compromiso"
+   ],
+   "descripcion": "Pensionados y jubilados · Cd. Juárez",
+   "cta": "Obtener cotización",
+   "url": "https://creditoatumedida.com/?utm_source=facebook&utm_medium=paid_social&utm_campaign=creditos_800_oct26&utm_content=ad-03",
+   "f45": "piezas/03_AD-03_ine-nss_4x5.png",
+   "f916": "piezas/03_AD-03_ine-nss_9x16.png"
+  }
+ ]
+}
