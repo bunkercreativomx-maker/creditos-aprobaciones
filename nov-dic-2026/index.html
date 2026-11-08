@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aprobación Nov–Dic 2026 · Créditos a tu medida</title>
+<style>
+:root{--bg:#0b1424;--card:#142238;--ink:#eef2f7;--muted:#9fb0c7;--gold:#c9a227;--gold2:#e6c55a;--ok:#2fbf71;--ch:#e8a33a}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--ink)}
+header{padding:22px 18px 10px;max-width:1200px;margin:auto}h1{margin:0;font-size:1.45rem}header p{color:var(--muted);margin:.4em 0 0;line-height:1.45}
+.bar{position:sticky;top:0;z-index:5;background:rgba(11,20,36,.96);backdrop-filter:blur(6px);border-bottom:1px solid #22324d}
+.bar .in{max-width:1200px;margin:auto;padding:10px 18px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.bar button{background:#1c2c47;color:var(--ink);border:1px solid #2c3f60;border-radius:20px;padding:6px 12px;font-size:.85rem;cursor:pointer}
+.bar button.on{background:var(--gold);color:#0b1424;border-color:var(--gold)}.stats{margin-left:auto;font-size:.85rem;color:var(--muted)}
+main{max-width:1200px;margin:auto;padding:16px 18px 80px;display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:16px}
+.card{background:var(--card);border-radius:14px;padding:12px;border:2px solid transparent}.card.approved{border-color:var(--ok)}.card.changes{border-color:var(--ch)}
+.top{display:flex;justify-content:space-between;font-size:.8rem;color:var(--muted);margin-bottom:6px}.tag{font-weight:700;font-size:.72rem;padding:2px 8px;border-radius:9px;background:var(--gold);color:#0b1424}.tag.hf{background:#4fd1c5}
+h3{margin:.2em 0 .5em;font-size:1.05rem}video{width:100%;border-radius:10px;background:#000;display:block}
+.v916 video{aspect-ratio:9/16;max-height:560px;object-fit:contain}.v11 video{aspect-ratio:1/1}
+.wait{aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;background:#0d1a2e;border-radius:10px;color:var(--muted)}
+label{display:block;font-size:.75rem;color:var(--muted);margin:10px 0 4px}textarea{width:100%;background:#0d1a2e;color:var(--ink);border:1px solid #2c3f60;border-radius:8px;padding:8px;font:inherit;font-size:.85rem;resize:vertical}
+.cap{min-height:150px}.acts{display:flex;gap:8px;margin-top:10px}.acts button{flex:1;padding:9px;border-radius:9px;border:0;font-weight:700;cursor:pointer}
+.ap{background:var(--ok);color:#06210f}.chg{background:var(--ch);color:#2a1800}.rs{flex:0 0 auto!important;background:#24364f;color:var(--ink)}
+.st{font-size:.8rem;margin-top:6px;color:var(--muted)}.st b.approved{color:var(--ok)}.st b.changes{color:var(--ch)}
+.saved{position:fixed;bottom:14px;right:14px;background:#1c2c47;padding:8px 14px;border-radius:20px;font-size:.8rem;opacity:0;transition:.3s}.saved.on{opacity:1}
+</style></head><body>
+<header><h1>Calendario Nov–Dic 2026 · Créditos a tu medida</h1>
+<p>20 nov → 19 dic 2026 · 2 publicaciones diarias (9:30 am y 6:30 pm) · 60 piezas con movimiento y voz.<br>
+Revise cada pieza: puede <b>aprobarla</b> o <b>pedir cambios</b> con una nota. También puede editar el texto de la publicación. Todo se guarda solo.</p></header>
+<div class="bar"><div class="in">
+<button data-f="all" class="on">Todas</button><button data-f="pending">Pendientes</button><button data-f="approved">Aprobadas</button><button data-f="changes">Con cambios</button>
+<button data-f="VE">Videos</button><button data-f="HF">Imágenes animadas</button><span class="stats" id="stats"></span></div></div>
+<main id="grid"></main><div class="saved" id="saved">Guardado ✓</div>
+<script>
+const PB_URL='https://aprovaciones.bunkeragent.cloud', CLIENT='creditos', CAMPAIGN='nov-dic-2026', REVIEWER='Cliente Créditos a tu medida', KEY='creditos_nd2026_v1';
+let rowId=null, posts=[], filter='all', state={status:{},notes:{},edits:{}};
+const $=s=>document.querySelector(s), esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function loadLocal(){try{const s=JSON.parse(localStorage.getItem(KEY)||'{}');state={status:s.status||{},notes:s.notes||{},edits:s.edits||{}}}catch(e){}}
+function saveLocal(){localStorage.setItem(KEY,JSON.stringify(state))}
+let _t=null;function schedule(){saveLocal();updateStats();clearTimeout(_t);_t=setTimeout(persist,900)}
+function buildReview(){return {posts:posts.map(p=>({id:p.id,fecha:p.fecha,hora:p.hora,status:state.status[p.id]||'pending',notes:state.notes[p.id]||'',caption:state.edits[p.id]||''})),adStatus:{}}}
+async function persist(){
+  const review=buildReview(),h={'Content-Type':'application/json'};
+  try{
+    let r;
+    if(rowId) r=await fetch(`${PB_URL}/api/collections/approvals/records/${rowId}`,{method:'PATCH',headers:h,body:JSON.stringify({review})});
+    else {r=await fetch(`${PB_URL}/api/collections/approvals/records`,{method:'POST',headers:h,body:JSON.stringify({client:CLIENT,campaign:CAMPAIGN,client_name:REVIEWER,review})}); if(r.ok){const j=await r.json(); rowId=j.id;}}
+    if(r.ok){const s=$('#saved');s.classList.add('on');setTimeout(()=>s.classList.remove('on'),1200)}
+  }catch(e){}
+}
+async function mergeServer(){
+  try{
+    const q=encodeURIComponent(`(client='${CLIENT}'&&campaign='${CAMPAIGN}'&&client_name='${REVIEWER}')`);
+    const d=await (await fetch(`${PB_URL}/api/collections/approvals/records?filter=${q}&perPage=50`)).json();
+    const row=(d.items||[])[0]; if(!row) return; rowId=row.id;
+    ((row.review&&row.review.posts)||[]).forEach(p=>{const id=+p.id;
+      if(p.status&&p.status!=='pending'&&!state.status[id]) state.status[id]=p.status;
+      const n=p.notes||p.note; if(n&&!state.notes[id]) state.notes[id]=n;
+      if(p.caption&&!state.edits[id]) state.edits[id]=p.caption;});
+  }catch(e){}
+}
+function setStatus(id,st){ if(st) state.status[id]=st; else delete state.status[id]; schedule(); render(); }
+function card(p){
+  const st=state.status[p.id]||'pending', v=p.kind==='VE';
+  const media=p.media?`<video controls playsinline preload="none" poster="${p.poster}?v=1" src="${p.media}?v=1"></video>`:`<div class="wait">En producción…</div>`;
+  return `<div class="card ${st}" id="c${p.id}"><div class="top"><span><b>#${String(p.id).padStart(2,'0')}</b> · ${esc(p.fecha)} · ${esc(p.hora)}</span><span class="tag ${v?'':'hf'}">${esc(p.formato)}</span></div>
+  <h3>${esc(p.tema)}</h3><div class="${v?'v916':'v11'}">${media}</div>
+  <label>Texto de la publicación (puede editarlo)</label><textarea class="cap" data-e="${p.id}">${esc(state.edits[p.id]||p.caption)}</textarea>
+  <label>Notas o cambios</label><textarea data-n="${p.id}" rows="2" placeholder="Escriba aquí qué le gustaría cambiar">${esc(state.notes[p.id]||'')}</textarea>
+  <div class="acts"><button class="ap" onclick="setStatus(${p.id},'approved')">✓ Aprobar</button><button class="chg" onclick="setStatus(${p.id},'changes')">✎ Pedir cambios</button><button class="rs" onclick="setStatus(${p.id},null)">↺</button></div>
+  <div class="st">Estado: <b class="${st}">${st==='approved'?'Aprobada':st==='changes'?'Cambios pedidos':'Pendiente'}</b></div></div>`;
+}
+function render(){
+  const show=posts.filter(p=>filter==='all'||(filter===p.kind)||(state.status[p.id]||'pending')===filter);
+  $('#grid').innerHTML=show.map(card).join('');
+  document.querySelectorAll('[data-n]').forEach(t=>t.oninput=()=>{state.notes[t.dataset.n]=t.value;schedule()});
+  document.querySelectorAll('[data-e]').forEach(t=>t.oninput=()=>{const p=posts.find(x=>x.id==t.dataset.e);if(t.value.trim()===p.caption.trim())delete state.edits[p.id];else state.edits[p.id]=t.value;schedule()});
+  updateStats();
+}
+function updateStats(){const c={approved:0,changes:0};Object.values(state.status).forEach(s=>c[s]=(c[s]||0)+1);$('#stats').textContent=`${c.approved} aprobadas · ${c.changes} con cambios · ${posts.length-c.approved-c.changes} pendientes`}
+document.querySelectorAll('.bar button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.bar button').forEach(x=>x.classList.remove('on'));b.classList.add('on');filter=b.dataset.f;render()});
+(async()=>{loadLocal();posts=await (await fetch('calendar.json?v='+Date.now())).json();await mergeServer();render();})();
+</script></body></html>
