@@ -287,10 +287,10 @@
   "hora": "9:30 am",
   "formato": "VIDEO VE",
   "tipo": "Video",
-  "tema": "Bienvenido diciembre",
-  "gancho": "24 días para Nochebuena. ¿Ya tiene todo?",
-  "visual": "Abuela tachando un calendario en la cocina, sonrisa cómplice",
-  "palanca": "Urgencia real",
+  "tema": "Para quién es",
+  "gancho": "Pensionados y jubilados de IMSS, ISSSTE, CFE, Pemex y SNTE Sección 8.",
+  "visual": "5 escenas: 5 jubilados distintos (hombres/mujeres) en sus casas, uno por dependencia (sin logos)",
+  "palanca": "Identificación",
   "cta": "Sitio → WhatsApp"
  },
  {
@@ -315,10 +315,10 @@
   "hora": "9:30 am",
   "formato": "IMAGEN ANIMADA HF",
   "tipo": "Video",
-  "tema": "Para quién es",
-  "gancho": "Pensionados y jubilados de IMSS, ISSSTE, CFE, Pemex y SNTE Sección 8.",
-  "visual": "5 escenas: 5 jubilados distintos (hombres/mujeres) en sus casas, uno por dependencia (sin logos)",
-  "palanca": "Identificación",
+  "tema": "Bienvenido diciembre",
+  "gancho": "24 días para Nochebuena. ¿Ya tiene todo?",
+  "visual": "Abuela tachando un calendario en la cocina, sonrisa cómplice",
+  "palanca": "Urgencia real",
   "cta": "Sitio → WhatsApp"
  },
  {
@@ -707,10 +707,10 @@
   "hora": "9:30 am",
   "formato": "IMAGEN ANIMADA HF",
   "tipo": "Video",
-  "tema": "Hoy empiezan las posadas",
-  "gancho": "Hoy empiezan las posadas. ¡Que no falte nada!",
-  "visual": "Posada de barrio · jubilados cantando con velitas · ponche · piñata",
-  "palanca": "Cómo SE SIENTE",
+  "tema": "Boletos antes de que suban",
+  "gancho": "Los boletos suben cada semana. Compre los suyos hoy.",
+  "visual": "Pareja 68 en la computadora/celular eligiendo viaje, emoción",
+  "palanca": "Costo de no actuar",
   "cta": "Sitio → WhatsApp"
  },
  {
@@ -720,12 +720,12 @@
   "iso": "2026-12-15",
   "hora": "6:30 pm",
   "formato": "IMAGEN ANIMADA HF",
-  "tipo": "Interacción",
-  "tema": "El que canta más fuerte",
-  "gancho": "Etiquete a quien canta más fuerte en la posada. 🎶",
-  "visual": "Señora 70 cantando con vela en mano, alegría",
+  "tipo": "Educativo",
+  "tema": "Pago que sí le conviene",
+  "gancho": "Pida su pago mensual por escrito y asegúrese de que le quede cómodo.",
+  "visual": "Pareja jubilada revisando cuentas en la mesa, tranquilos",
   "palanca": "",
-  "cta": "Etiquetar"
+  "cta": "Guardar"
  },
  {
   "n": 53,
@@ -735,10 +735,10 @@
   "hora": "9:30 am",
   "formato": "VIDEO VE",
   "tipo": "Video",
-  "tema": "Boletos antes de que suban",
-  "gancho": "Los boletos suben cada semana. Compre los suyos hoy.",
-  "visual": "Pareja 68 en la computadora/celular eligiendo viaje, emoción",
-  "palanca": "Costo de no actuar",
+  "tema": "Hoy empiezan las posadas",
+  "gancho": "Hoy empiezan las posadas. ¡Que no falte nada!",
+  "visual": "Posada de barrio · jubilados cantando con velitas · ponche · piñata",
+  "palanca": "Cómo SE SIENTE",
   "cta": "Sitio → WhatsApp"
  },
  {
@@ -748,12 +748,12 @@
   "iso": "2026-12-16",
   "hora": "6:30 pm",
   "formato": "IMAGEN ANIMADA HF",
-  "tipo": "Educativo",
-  "tema": "Pago que sí le conviene",
-  "gancho": "Pida su pago mensual por escrito y asegúrese de que le quede cómodo.",
-  "visual": "Pareja jubilada revisando cuentas en la mesa, tranquilos",
+  "tipo": "Interacción",
+  "tema": "El que canta más fuerte",
+  "gancho": "Etiquete a quien canta más fuerte en la posada. 🎶",
+  "visual": "Señora 70 cantando con vela en mano, alegría",
   "palanca": "",
-  "cta": "Guardar"
+  "cta": "Etiquetar"
  },
  {
   "n": 55,
