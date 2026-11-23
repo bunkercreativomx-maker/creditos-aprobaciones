@@ -12,11 +12,11 @@ PIEZAS = [
     # (archivo, foto, chip, titular, apoyo, cta)
     ("calentamiento", "calentamiento-album", "CRÉDITOS A TU MEDIDA", "Ya estamos en Facebook", "Pensionados y jubilados de Ciudad Juárez · Zona Pronaf", None),
     ("AD-01", "ad-pareja-dependencias", "PENSIONADOS Y JUBILADOS", "Crédito para pensionados y jubilados", "IMSS · ISSSTE · CFE · Pemex · SNTE Sección 8", "Solicita en creditoatumedida.com"),
-    ("AD-02", "ad-ine-nss", "COTIZA EN MINUTOS", "Con tu identificación oficial te cotizamos", "Sin historial crediticio perfecto", "Cotiza en creditoatumedida.com"),
-    ("AD-03", "ad-mismo-dia", "DEPÓSITO EL MISMO DÍA", "Solicita antes de las 3 pm y te depositamos hoy", "Si tus documentos están en orden", "Solicita en creditoatumedida.com"),
+    ("AD-02", "ad-ine-nss", "COTIZA SIN COSTO", "Te ayudamos a cotizar con tu identificación oficial", "La asesoría no tiene costo", "Cotiza en creditoatumedida.com"),
+    ("AD-03", "ad-mismo-dia", "ANTES DE LAS 3 PM", "Inicia hoy tu trámite antes de las 3 pm", "Si la financiera aprueba tu crédito, el depósito puede ser el mismo día", "Solicita en creditoatumedida.com"),
     ("AD-04", "ad-asesor-persona", "ATENCIÓN EN PERSONA", "Un asesor te explica todo antes de firmar", "Benjamín Franklin 3220 · Zona Pronaf · por la entrada de Subway", "Agenda en creditoatumedida.com"),
-    ("AD-05", "ad-descuento-pension", "CRÉDITO VÍA NÓMINA", "Se descuenta directo de tu pensión", "Pagos fijos, sin ir al banco", "Conoce más en creditoatumedida.com"),
-    ("AD-06", "ad-confianza-8-anos", "MÁS DE 8 AÑOS", "Más de 8 años otorgando créditos en Juárez", "Un asesor lo acompaña de principio a fin", "Solicita en creditoatumedida.com"),
+    ("AD-05", "ad-descuento-pension", "CRÉDITO VÍA NÓMINA", "Se descuenta directo de tu pensión", "Te ayudamos con todo el trámite", "Conoce más en creditoatumedida.com"),
+    ("AD-06", "ad-confianza-8-anos", "MÁS DE 8 AÑOS", "Más de 8 años asesorando en Juárez", "Un asesor lo acompaña de principio a fin", "Solicita en creditoatumedida.com"),
 ]
 
 if __name__ == "__main__":

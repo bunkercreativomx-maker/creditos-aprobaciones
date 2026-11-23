@@ -111,7 +111,7 @@ ads = [
     {"id": "META-04", "name": "Texto dominante (mismo día)", "objective": "Mensajes a WhatsApp",
      "audience": "Amplia, 55-80 años (jubilados y pensionados), Ciudad Juárez + 25 km",
      "creative": "Imagen limpia con tipografía grande: \"Crédito vía nómina · dinero el mismo día\".",
-     "primary": ["Solicita antes de las 3:00 pm y tu crédito se aprueba y se deposita el mismo día. Más de 8 años otorgando créditos en Ciudad Juárez, con asesoría de principio a fin.",
+     "primary": ["Solicita antes de las 3:00 pm y tu crédito se aprueba y se deposita el mismo día. Más de 8 años asesorando en Ciudad Juárez, con asesoría de principio a fin.",
                   "Antes de las 3 de la tarde entra el mismo día; después, cae al siguiente. Si quieres resolverlo hoy, escríbenos ahora."],
      "headline": ["Dinero el mismo día", "Solicita antes de las 3:00 pm"],
      "cta": "Enviar mensaje"},

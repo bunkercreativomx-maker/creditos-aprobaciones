@@ -13,18 +13,18 @@ NAVY, GOLD, GOLD_L, CREAM = B.NAVY, B.GOLD, B.GOLD_L, B.CREAM
 F = B.font
 
 ADS = [
-    dict(id="01", foto="mismo-dia", chip="DEPÓSITO EL MISMO DÍA",
-         head="Solicite antes de las 3\u00a0pm y reciba su crédito\u00a0hoy",
-         sub="Si sus documentos están en orden", pills=None,
+    dict(id="01", foto="mismo-dia", chip="ANTES DE LAS 3 PM",
+         head="Inicie su trámite antes de las 3\u00a0pm",
+         sub="Si la financiera aprueba su crédito, el depósito puede ser el mismo día", pills=None,
          cta="Solicite en creditoatumedida.com"),
     dict(id="02", foto="dependencias", chip="CRÉDITO VÍA NÓMINA",
          head="Crédito para pensionados y jubilados",
          sub="El pago se descuenta directo de la pensión",
          pills=["IMSS", "ISSSTE", "CFE", "PEMEX", "SNTE 8"],
          cta="Solicite en creditoatumedida.com"),
-    dict(id="03", foto="ine-nss", chip="COTICE SIN COMPROMISO",
-         head="Con su INE y su número de seguro social le cotizamos",
-         sub="No necesita historial crediticio perfecto", pills=None,
+    dict(id="03", foto="ine-nss", chip="COTICE SIN COSTO",
+         head="Le ayudamos a cotizar con su identificación oficial",
+         sub="La asesoría no tiene costo", pills=None,
          cta="Cotice en creditoatumedida.com"),
 ]
 
@@ -76,13 +76,13 @@ def fit(d, text, name, size, wght, maxw, maxlines):
         size -= 3
 
 
-def pieza(ad, W, H, story):
+def pieza(ad, W, H, story, shift=0):
     img = cover(os.path.join(HERE, "fotos", ad["foto"] + ".png"), W, H, focus=0.0)
     # bloque de texto empieza donde termina la gente
     if story:
         g0, g1, top, bottom_limit = int(H * .40), int(H * .56), int(H * .53), int(H * .80)
     else:
-        g0, g1, top, bottom_limit = int(H * .40), int(H * .57), int(H * .53), int(H * .86)
+        g0, g1, top, bottom_limit = int(H * .40) - shift, int(H * .57) - shift, int(H * .53) - shift, int(H * .86)
     img.alpha_composite(gradient(W, H, g0, g1))
     d = ImageDraw.Draw(img)
     m = int(W * 0.07)
@@ -131,15 +131,24 @@ def pieza(ad, W, H, story):
 
     # pie: legal + logo + whatsapp
     fl = F("Manrope.ttf", 22, [500])
-    legal = "Sujeto a aprobación de crédito · Requisitos y condiciones en creditoatumedida.com"
-    while d.textlength(legal, font=fl) > maxw and fl.size > 14:
-        fl = F("Manrope.ttf", fl.size - 1, [500])
+    legal = B.LEGAL_IMG
+    fl = F("Manrope.ttf", 20, [500])
+    leg_lines, cur = [], ""
+    for w in legal.split():
+        t = (cur + " " + w).strip()
+        if d.textlength(t, font=fl) > maxw and cur:
+            leg_lines.append(cur); cur = w
+        else:
+            cur = t
+    leg_lines.append(cur)
+    lh = int(fl.size * 1.3)
     lz = 58
-    base_y = int(H * (0.80 if story else 0.875))
+    base_y = int(H * (0.80 if story else 0.875)) - lh * (len(leg_lines) - 1)
     if story:
         base_y = max(base_y, y + 30)
-    d.text((m, base_y), legal, font=fl, fill=(176, 184, 198))
-    ly = base_y + fl.size + 22
+    for i, ln in enumerate(leg_lines):
+        d.text((m, base_y + i * lh), ln, font=fl, fill=(176, 184, 198))
+    ly = base_y + lh * (len(leg_lines) - 1) + fl.size + 22
     img.alpha_composite(Image.open(B.LOGO).convert("RGBA").resize((lz, lz), Image.LANCZOS), (m, ly))
     d = ImageDraw.Draw(img)
     fb = F("Manrope.ttf", 30, [700])
@@ -154,6 +163,8 @@ if __name__ == "__main__":
     for i, ad in enumerate(ADS, 1):
         for tag, (W, H, story) in {"4x5": (1080, 1350, False), "9x16": (1080, 1920, True)}.items():
             im, over = pieza(ad, W, H, story)
+            if over > 0:
+                im, over = pieza(ad, W, H, story, shift=over + 12)
             p = os.path.join(OUT, f"{i:02d}_AD-{ad['id']}_{ad['foto']}_{tag}.png")
             im.save(p, optimize=True)
             print(os.path.basename(p), "OVERFLOW" if over > 0 else "ok", over)
