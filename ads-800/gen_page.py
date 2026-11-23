@@ -16,7 +16,7 @@ ADS = [
    "Crédito vía nómina para pensionados y jubilados del IMSS, ISSSTE, CFE, Pemex y SNTE Sección 8 en Ciudad Juárez.\n\n✅ El pago se descuenta directo de la pensión\n✅ No necesita historial crediticio perfecto\n✅ Un asesor le acompaña de principio a fin\n\nSolicite en creditoatumedida.com",
    "Pensionados y jubilados de IMSS, ISSSTE, CFE, Pemex y SNTE Sección 8: en Créditos a tu medida el trámite es claro y en persona, en Zona Pronaf.\n\nDeje sus datos en nuestra página y un asesor le contacta para explicarle todo, sin compromiso."],
   "titular": ["Crédito para pensionados y jubilados", "IMSS · ISSSTE · CFE · Pemex · SNTE 8"],
-  "descripcion": "Financiera Fortaleza, SOFOM, E.N.R.", "cta": "Solicitar ahora"},
+  "descripcion": "Requisitos y condiciones en creditoatumedida.com", "cta": "Solicitar ahora"},
  {"n": "03", "id": "AD-03", "nombre": "INE + NSS", "foto": "ine-nss", "angulo": "Facilidad para empezar",
   "primario": [
    "Con su INE y su número de seguro social le cotizamos. Así de fácil empieza su crédito vía nómina.\n\nNo necesita historial crediticio perfecto: cada caso se revisa de forma individual.\n\nPara pensionados y jubilados del IMSS, ISSSTE, CFE, Pemex y SNTE Sección 8. Cotice sin compromiso en creditoatumedida.com",
@@ -130,7 +130,7 @@ ol li,ul li{{margin:6px 0}}table{{width:100%;border-collapse:collapse;font-size:
 <li>Crédito a largo plazo (más de 90 días) por descuento de pensión: permitido. Meta prohíbe préstamos de día de pago, adelantos de nómina y préstamos de ≤90 días. <a href="https://transparency.meta.com/policies/ad-standards/restricted-goods-services/financial-services/" target="_blank">Política de Meta</a></li>
 <li>Ninguna tasa, monto, CAT ni plazo (si se menciona uno, hay que mostrar todos).</li>
 <li>Nada de “¿estás endeudado?” ni “¿eres jubilado?”: Meta prohíbe afirmar o insinuar atributos personales (situación financiera, edad). Todo va en tercera persona/usted.</li>
-<li>Razón social visible en cada pieza: Financiera Fortaleza, S.A. de C.V., SOFOM, E.N.R. Si Meta pide verificar el negocio o la autorización financiera, se hace con los papeles de la SOFOM.</li>
+<li>No mencionar el nombre de la financiera en anuncios, copys ni imágenes. Leyenda en cada pieza: Sujeto a aprobación de crédito · Requisitos y condiciones en creditoatumedida.com.</li>
 <li>El anuncio no pide datos personales dentro de Facebook; el formulario está en el sitio.</li>
 </ul>
 

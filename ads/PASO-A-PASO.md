@@ -79,7 +79,7 @@ Arranca **cuando el Pixel ya registró eventos** (≥3-4 días de calentamiento)
 - [ ] Categoría especial financiera marcada.
 - [ ] Ningún anuncio menciona tasa, monto, CAT ni plazo (no hay cifras aprobadas y Meta exige mostrarlas completas si se mencionan).
 - [ ] Nada de "¿Estás endeudado?" ni "tu mal buró". Meta prohíbe aludir a la situación financiera personal. Los copys ya están redactados en tercera persona/usted.
-- [ ] Razón social visible: *Financiera Fortaleza, S.A. de C.V., SOFOM, E.N.R.* (ya va en las imágenes).
+- [ ] NO mencionar el nombre de la financiera (ni en imágenes ni en copys).
 - [ ] Si Meta pide **verificación de anunciante financiero** o **verificación del negocio**, completa la del portafolio (RFC/Acta) a nombre de quien tenga el registro SOFOM/Condusef.
 - [ ] El sitio carga rápido en celular y el formulario funciona (el Pixel mide ahí).
 

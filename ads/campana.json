@@ -33,9 +33,9 @@
    "titular": ["Se descuenta directo de la pensión", "Pagos fijos, sin ir al banco"],
    "descripcion": "Sujeto a aprobación de crédito", "cta": "Más información"},
   {"id": "AD-06", "nombre": "Más de 8 años", "angulo": "Respaldo / autoridad",
-   "primario": ["Más de 8 años otorgando créditos en Ciudad Juárez, de la mano de Financiera Fortaleza, S.A. de C.V., SOFOM, E.N.R. Crédito vía nómina para pensionados y jubilados, con oficina física y asesores reales.",
+   "primario": ["Más de 8 años otorgando créditos en Ciudad Juárez. Un asesor te acompaña de principio a fin. Crédito vía nómina para pensionados y jubilados, con oficina física y asesores reales.",
                 "No somos una app nueva ni un intermediario desconocido: más de 8 años otorgando créditos en Juárez. Inicie su solicitud en línea y conózcanos en Zona Pronaf."],
-   "titular": ["Más de 8 años otorgando créditos", "Respaldo de Financiera Fortaleza"],
+   "titular": ["Más de 8 años otorgando créditos", "Un asesor de principio a fin"],
    "descripcion": "Oficina en Zona Pronaf, Cd. Juárez", "cta": "Solicitar ahora"}
  ]
 }

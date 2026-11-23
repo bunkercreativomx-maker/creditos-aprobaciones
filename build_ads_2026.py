@@ -16,7 +16,7 @@ PIEZAS = [
     ("AD-03", "ad-mismo-dia", "DEPÓSITO EL MISMO DÍA", "Solicita antes de las 3 pm y te depositamos hoy", "Si tus documentos están en orden", "Solicita en creditoatumedida.com"),
     ("AD-04", "ad-asesor-persona", "ATENCIÓN EN PERSONA", "Un asesor te explica todo antes de firmar", "Benjamín Franklin 3220 · Zona Pronaf · por la entrada de Subway", "Agenda en creditoatumedida.com"),
     ("AD-05", "ad-descuento-pension", "CRÉDITO VÍA NÓMINA", "Se descuenta directo de tu pensión", "Pagos fijos, sin ir al banco", "Conoce más en creditoatumedida.com"),
-    ("AD-06", "ad-confianza-8-anos", "MÁS DE 8 AÑOS", "Más de 8 años otorgando créditos en Juárez", "De la mano de Financiera Fortaleza", "Solicita en creditoatumedida.com"),
+    ("AD-06", "ad-confianza-8-anos", "MÁS DE 8 AÑOS", "Más de 8 años otorgando créditos en Juárez", "Un asesor lo acompaña de principio a fin", "Solicita en creditoatumedida.com"),
 ]
 
 if __name__ == "__main__":

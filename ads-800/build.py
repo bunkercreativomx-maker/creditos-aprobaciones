@@ -131,7 +131,7 @@ def pieza(ad, W, H, story):
 
     # pie: legal + logo + whatsapp
     fl = F("Manrope.ttf", 22, [500])
-    legal = "Sujeto a aprobación de crédito · Financiera Fortaleza, S.A. de C.V., SOFOM, E.N.R."
+    legal = "Sujeto a aprobación de crédito · Requisitos y condiciones en creditoatumedida.com"
     while d.textlength(legal, font=fl) > maxw and fl.size > 14:
         fl = F("Manrope.ttf", fl.size - 1, [500])
     lz = 58
